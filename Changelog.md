@@ -4,3 +4,13 @@ Week 3
 Jordan - Setup and connected android studio to github account. The Intro activity is nearly complete, all character images, profiles have
 been created using a layout screen activity with viewpager to switch through each characters profile. 
 
+Features added:
+- Intro activity screen
+- Viewpager to switch between character profiles
+- Image of characters with their bio / profile description 
+- Swipe gesture to switch between characters
+
+Still working on features: 
+- SELECT CHARACTER button action to begin a characters storyline
+- Create Splashcreen on launch for 4 seconds that includes app title. 
+- Hamburger menu to select and edit settings
