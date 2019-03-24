@@ -6,6 +6,8 @@ been created using a layout screen activity with viewpager to switch through eac
 
 Features added:
 - Intro activity screen
+- Layout screen (for characters profiles)
+- Main activity screen
 - Viewpager to switch between character profiles
 - Image of characters with their bio / profile description 
 - Swipe gesture to switch between characters
