@@ -18,3 +18,22 @@ Still working on features:
 - Hamburger menu to select and edit settings
 
 **Henry: good. But both programmers need contributions if both wants marks for the week (otherwise the only one who worked)**
+
+Week 4
+30/03/19 - Saturday
+
+Jordan - Splashscreen activity was created with a logo animation as the app is launched. Although, the app will work with the main activity set but if changed to the intro activity, the app stops working. 
+
+Features added:
+- Splashscreen activity screen
+- Logo of the game on the launch screen
+- Name of the app on the launch screen
+- 5000 duration timer to load the main activity screen 
+
+Still working on features: 
+- To load the intro activity screen instead of main 
+- To create an options icon for settings 
+- Making individual storylines for characters
+- Adding buttons as choices for each characters storyline
+
+
