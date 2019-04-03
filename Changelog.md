@@ -38,5 +38,5 @@ Still working on features:
 ## Henry notes
 - Missing progress recently (you need to work more days - Deakin requires a minimum 10-14 hours per week per unit). Please update/
 - Also say WHO did each task (at the end of the line, add [NAME]), so I can line it up with attendance.php and allocate final marks correctly.
-
+- Include function comments before each function, in multi-line format /* */
 
