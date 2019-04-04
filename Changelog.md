@@ -43,7 +43,7 @@ Still working on features:
 ## Henry notes
 - Include function comments before each function, in multi-line format /* */
 
-Daniels Changes
+## Daniels Changes
 
 The following art assets have been uploaded to the drawable folder;
 - menutitle.png
@@ -51,6 +51,7 @@ The following art assets have been uploaded to the drawable folder;
 - menuabout.png
 - menusettings.png
 - menubackground.png
+
 These assets were created in photoshop and are my own personal creations and can be used without reference.
 
 - Changed the initial load activity from Splashscreen to the new main menu activity
