@@ -38,7 +38,7 @@ public class IntroActivity extends AppCompatActivity {
 
         // Hide the action bar
 
-        getSupportActionBar().hide();
+        //getSupportActionBar().hide();
 
 
         // ini views

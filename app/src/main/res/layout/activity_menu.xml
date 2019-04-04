@@ -8,35 +8,8 @@
     tools:context=".MenuActivity">
 
 
-    <Button
-        android:id="@+id/PlayButton"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="228dp"
-        android:layout_height="84dp"
-        android:visibility="invisible"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="295dp" />
-
-    <Button
-        android:id="@+id/AboutButton"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="228dp"
-        android:layout_height="84dp"
-        android:visibility="invisible"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="405dp" />
-
-    <Button
-        android:id="@+id/SettingsButton"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="228dp"
-        android:layout_height="84dp"
-        android:visibility="invisible"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="515dp" />
-
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/title_image"
         android:layout_width="wrap_content"
         android:layout_height="274dp"
         android:layout_marginStart="8dp"
@@ -47,19 +20,19 @@
         app:srcCompat="@drawable/menutitle" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/about_image"
         android:layout_width="283dp"
         android:layout_height="74dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/PlayButton"
         app:srcCompat="@drawable/menuabout" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/settings_image"
         android:layout_width="283dp"
         android:layout_height="74dp"
         android:layout_marginStart="8dp"
@@ -67,11 +40,11 @@
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/about_image"
         app:srcCompat="@drawable/menusettings" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/play_image"
         android:layout_width="225dp"
         android:layout_height="74dp"
         android:layout_marginStart="8dp"
@@ -79,7 +52,45 @@
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/title_image"
         app:srcCompat="@drawable/menuplay" />
+
+    <Button
+        android:id="@+id/PlayButton"
+        android:layout_width="232dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_image" />
+
+    <Button
+        android:id="@+id/AboutButton"
+        android:layout_width="286dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PlayButton" />
+
+    <Button
+        android:id="@+id/SettingsButton"
+        android:layout_width="286dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AboutButton" />
 
 </android.support.constraint.ConstraintLayout>
