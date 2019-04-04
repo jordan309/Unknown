@@ -43,3 +43,21 @@ Still working on features:
 ## Henry notes
 - Include function comments before each function, in multi-line format /* */
 
+## Daniels Changes
+
+The following art assets have been uploaded to the drawable folder;
+- menutitle.png
+- menuplay.png
+- menuabout.png
+- menusettings.png
+- menubackground.png
+
+These assets were created in photoshop and are my own personal creations and can be used without reference.
+
+- Changed the initial load activity from Splashscreen to the new main menu activity
+- Changed style.xml file to no longer display the top bar as it was interfering with game art assets
+- Created the menu activity which will be the first point of navigation for players
+- Created AboutActivity
+- Created SettingsActivity
+- Updated background art assets in introActivity
+
