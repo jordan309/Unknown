@@ -61,3 +61,10 @@ These assets were created in photoshop and are my own personal creations and can
 - Created SettingsActivity
 - Updated background art assets in introActivity
 
+Connected the following Pages
+- About Page
+- Play Page
+- Settings Page
+
+- Fixed a bug causing crashes due to code on the character select screen trying to hide the top utility bar even though it did not exist.
+
