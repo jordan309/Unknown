@@ -1,7 +1,7 @@
 package com.example.jordan307.unknown;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+        import android.support.v7.app.AppCompatActivity;
+        import android.os.Bundle;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -13,3 +13,5 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
     }
 }
+
+
