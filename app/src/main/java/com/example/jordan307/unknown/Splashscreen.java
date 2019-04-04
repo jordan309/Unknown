@@ -23,9 +23,9 @@ public class Splashscreen extends AppCompatActivity {
         Animation myanim = AnimationUtils.loadAnimation(this,R.anim.splash_transition);
         iv.startAnimation(myanim);
 
-        final Intent i = new Intent(this,IntroActivity.class);
+       // final Intent i = new Intent(this,IntroActivity.class);
 
-        Thread timer = new Thread(){
+        /*Thread timer = new Thread(){
             public void run () {
                 try {
                     sleep(5000);
@@ -40,5 +40,6 @@ public class Splashscreen extends AppCompatActivity {
 
         };
             timer.start();
+            */
     }
 }
