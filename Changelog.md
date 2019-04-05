@@ -45,14 +45,16 @@ Still working on features:
 
 ## Daniels Changes
 
-The following art assets have been uploaded to the drawable folder;
+The following art assets have been uploaded to the drawable/raw folder;
 - menutitle.png
 - menuplay.png
 - menuabout.png
 - menusettings.png
 - menubackground.png
+- background_music.mp4
 
 These assets were created in photoshop and are my own personal creations and can be used without reference.
+The Music can be found in the Licence folder.
 
 Changes
 - Changed the initial load activity from Splashscreen to the new main menu activity
@@ -63,6 +65,7 @@ Changes
 - Updated background art assets in introActivity
 - Changed intro_title_colour to white to better match background
 - Added the intro_title_colour color property to intro_description
+- Added a MusicService class which is responsible for initiating, pausing, resuming and stopping 
 
 Connected the following Pages
 - About Page
