@@ -54,17 +54,23 @@ The following art assets have been uploaded to the drawable folder;
 
 These assets were created in photoshop and are my own personal creations and can be used without reference.
 
+Changes
 - Changed the initial load activity from Splashscreen to the new main menu activity
 - Changed style.xml file to no longer display the top bar as it was interfering with game art assets
 - Created the menu activity which will be the first point of navigation for players
 - Created AboutActivity
 - Created SettingsActivity
 - Updated background art assets in introActivity
+- Changed intro_title_colour to white to better match background
+- Added the intro_title_colour color property to intro_description
 
 Connected the following Pages
 - About Page
 - Play Page
 - Settings Page
 
+Bug Fixes
 - Fixed a bug causing crashes due to code on the character select screen trying to hide the top utility bar even though it did not exist.
+- Fixed an issue with the background image being set the the layout screen instead of the activity_intro layout.
+
 
