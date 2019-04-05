@@ -77,3 +77,27 @@ Bug Fixes
 - Fixed an issue with the background image being set the the layout screen instead of the activity_intro layout.
 
 
+# Week 5
+## 4/04/19 - Friday / Saturday
+
+Jordan - Fixing up some issues with the activity screens. Ensuring the elements display on different device sizes and buttons are clickable. Adding information to the about us screen and adding buttons and icons to the settings screen. 
+
+Features added:
+* About us page complete
+* Settings buttons created but no action yet 
+* Volume icon on and off
+
+
+Still working on features:
+* Making individual storylines for characters
+* Character storylines and choices
+* Tap sound on menu buttons
+* Playable storyline for 1 character 
+* Choice options created
+* Different pathway based on choice made
+* Comments to be made to all functions in java
+
+Fixed bugs: 
+- Splashscreen now loads on launch and sends user to menu screen after 5 seconds. 
+- Menu now displays properly for all different screen sizes
+
