@@ -123,4 +123,4 @@ Still working on features:
 - Adding a timer to some parts
 - Making the duration of the story longer
 
-
+**We have a weird issue Henry, the background music is still low when I turn it up but for Daniel it's normal volume.**
