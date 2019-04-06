@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Splashscreen"
-    android:background="#5fc3e9">
+    android:background="@drawable/menubackground">
 
     <LinearLayout
         android:gravity="center"

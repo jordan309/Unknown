@@ -21,7 +21,6 @@ public class IntroActivity extends AppCompatActivity {
     IntroViewPagerAdapter introViewPagerAdapter;
     TabLayout tabIndicator;
     Button btnGetStarted;
-    Animation btnAnim;
 
 
     @Override
@@ -29,7 +28,6 @@ public class IntroActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         // Activity set to full screen
-
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -41,7 +39,6 @@ public class IntroActivity extends AppCompatActivity {
 
         tabIndicator = findViewById(R.id.tab_indicator);
         btnGetStarted = findViewById(R.id.btn_get_started);
-        btnAnim = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.btn_animation);
 
         // Fill list screen
         List<ScreenItem> mList = new ArrayList<>();
@@ -55,7 +52,6 @@ public class IntroActivity extends AppCompatActivity {
         introViewPagerAdapter = new IntroViewPagerAdapter(this,mList);
         screenPager.setAdapter(introViewPagerAdapter);
 
-        btnGetStarted.setAnimation(btnAnim);
 
         // Get started button click listener
 

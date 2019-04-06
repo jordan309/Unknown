@@ -4,28 +4,27 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
-import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.IBinder;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.Button;
 
 public class MenuActivity extends AppCompatActivity {
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu);
 
+        // Activity set to full screen
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        setContentView(R.layout.activity_menu);
 
         //Initiate Music Service
         doBindService();
@@ -34,30 +33,51 @@ public class MenuActivity extends AppCompatActivity {
         startService(music);
 
 
-        Button buttonplay = (Button) findViewById(R.id.PlayButton);
+        final Button buttonplay = (Button) findViewById(R.id.PlayButton);
         buttonplay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), IntroActivity.class);
-                startActivity(intent);
+                final MediaPlayer mp = MediaPlayer.create(MenuActivity.this, R.raw.button_tap);
+                buttonplay.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        mp.start();
+                        Intent intent = new Intent(getApplicationContext(), IntroActivity.class);
+                        startActivity(intent);
+                    }
+                });
             }
         });
 
-        Button buttonabout = (Button) findViewById(R.id.AboutButton);
+        final Button buttonabout = (Button) findViewById(R.id.AboutButton);
         buttonabout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), AboutActivity.class);
-                startActivity(intent);
+                final MediaPlayer dp = MediaPlayer.create(MenuActivity.this,R.raw.button_tap);
+                buttonabout.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dp.start();
+                        Intent intent = new Intent(getApplicationContext(), AboutActivity.class);
+                        startActivity(intent);
+                    }
+                });
             }
         });
 
-        Button buttonsettings = (Button) findViewById(R.id.SettingsButton);
+        final Button buttonsettings = (Button) findViewById(R.id.SettingsButton);
         buttonsettings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), SettingsActivity.class);
-                startActivity(intent);
+                final MediaPlayer cp = MediaPlayer.create(MenuActivity.this,R.raw.button_tap);
+                buttonsettings.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        cp.start();
+                        Intent intent = new Intent(getApplicationContext(), SettingsActivity.class);
+                        startActivity(intent);
+                    }
+                });
             }
         });
     }

@@ -78,25 +78,22 @@ Bug Fixes
 
 
 # Week 5
-## 5/04/19 - Friday 
+## 4/04/19 - Friday / Saturday
 
-Jordan - Uploaded an old version of the project file without knowing, lost hours of progress on the project. Will make all the changes again and more with the updated version.
-
-## 6/04/19 - Saturday 
-
-Fixing up some issues with the activity screens. Ensuring the elements display on different device sizes and buttons are clickable. Adding information to the about us screen and adding buttons and icons to the settings screen. 
+Jordan - Fixing up some issues with the activity screens. Ensuring the elements display on different device sizes and buttons are clickable. Adding information to the about us screen and adding buttons and icons to the settings screen. 
 
 Features added:
 * About us page complete
 * Settings buttons created but no action yet 
 * Volume icon on and off
-* Playable storyline for 1 character 
-* Choice options created
-* Tap sound on menu buttons
+
 
 Still working on features:
-* Making individual storylines for all characters
+* Making individual storylines for characters
 * Character storylines and choices
+* Tap sound on menu buttons
+* Playable storyline for 1 character 
+* Choice options created
 * Different pathway based on choice made
 * Comments to be made to all functions in java
 
