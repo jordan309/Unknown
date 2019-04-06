@@ -87,7 +87,6 @@ Features added:
 * Settings buttons created but no action yet 
 * Volume icon on and off
 
-
 Still working on features:
 * Making individual storylines for characters
 * Character storylines and choices
@@ -100,4 +99,28 @@ Still working on features:
 Fixed bugs: 
 - Splashscreen now loads on launch and sends user to menu screen after 5 seconds. 
 - Menu now displays properly for all different screen sizes
+
+
+# Week 5
+## 6/04/19 - Saturday
+
+Jordan - Bugs and errors fixed: 9pm - 11:30pm having a massive error, GitHub was committing and pushing but the committing wasn’t actually committing. Spent 9hrs working on the project 3pm - 11pm.
+
+Features added:
+- Storyline for 1 character has been created
+- Buttons for choices created
+- Hunger percentage level added
+- Story java script added
+- Added app icons for all device sizes
+- About us page is complete
+- Settings page: added load & save button, volume button 
+- Background music (changed)
+- Sound effect for all buttons 
+
+Still working on features: 
+- Finishing first story 
+- Adding hyperthemria and hydration levels
+- Adding a timer to some parts
+- Making the duration of the story longer
+
 
