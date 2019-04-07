@@ -124,3 +124,10 @@ Still working on features:
 - Making the duration of the story longer
 
 **We have a weird issue Henry, the background music is still low when I turn it up but for Daniel it's normal volume.**
+
+# Week 5
+## 7/04/19 - Sunday
+
+Daniels Work
+
+
