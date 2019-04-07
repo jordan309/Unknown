@@ -44,7 +44,7 @@ Still working on features:
 - Include function comments before each function, in multi-line format /* */
 
 ## Daniels Changes
-
+## Thursday + Friday
 The following art assets have been uploaded to the drawable/raw folder;
 - menutitle.png
 - menuplay.png
@@ -124,3 +124,16 @@ Still working on features:
 - Making the duration of the story longer
 
 **We have a weird issue Henry, the background music is still low when I turn it up but for Daniel it's normal volume.**
+
+# Week 5
+## 7/04/19 - Sunday
+## Daniels Changes
+
+Created and Contributed to Gameplay Planning Document
+https://docs.google.com/spreadsheets/d/120B9Wa4GTF05mms-3UFofOC7duH0oNq_vQiT-zvBrvA/edit?usp=sharing
+
+Redesigned core gameplay features and functions. The issues the team ran into and the solutions that were come up with can be found here
+https://docs.google.com/document/d/1W-DGNVzojWl2uFtJlTu8Ut5dhOd87au7NwghmlT3_Kc/edit#
+
+The gameplay planning and redesign took up a large amount of Sunday coming up with viable solutions to the design issues.
+
