@@ -12,6 +12,11 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
+
+    //Disable Back Button
+    @Override
+    public void onBackPressed(){}
+
     Button answer1, answer2, answer3;
 
     TextView foodScore, waterScore, sanityScore, question;

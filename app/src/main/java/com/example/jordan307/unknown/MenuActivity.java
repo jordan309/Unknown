@@ -18,6 +18,10 @@ public class MenuActivity extends AppCompatActivity {
 
     HomeStop mHomestop;
 
+    //Disable Back Button
+    @Override
+    public void onBackPressed(){}
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
