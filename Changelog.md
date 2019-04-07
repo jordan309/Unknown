@@ -154,7 +154,7 @@ The gameplay planning and redesign took up a large amount of Sunday coming up wi
 # Week 5
 ## 7/04/19 - Sunday / Monday
 
-Jordan - I have been working on a google sheet to plan out the storyline, every part with 3 available choices. 
+Jordan - I have been working on a google sheet to plan out all 50 parts of the storyline with 3 available choices. These choices will affect the hunger, hydration and sanity levels. 
 
 Features added:
 - Halfway finished with the storyline and choice options
