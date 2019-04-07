@@ -1,8 +1,5 @@
 package com.example.jordan307.unknown;
 
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,14 +12,16 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button answer1, answer2, answer3, answer4;
+    Button answer1, answer2, answer3;
 
-    TextView score, question;
+    TextView foodScore, waterScore, sanityScore, question;
 
     private Questions mQuestions = new Questions();
 
     private String mAnswer;
-    private int mScore = 100;
+    private int foodValue = 100;
+    private int waterValue = 100;
+    private int sanityValue = 100;
     private int mQuestionsLength = mQuestions.mQuestions.length;
 
     Random r;
@@ -44,12 +43,15 @@ public class MainActivity extends AppCompatActivity {
         answer1 = findViewById(R.id.answer1);
         answer2 = findViewById(R.id.answer2);
         answer3 = findViewById(R.id.answer3);
-        answer4 = findViewById(R.id.answer4);
 
-        score = findViewById(R.id.score);
+        foodScore = findViewById(R.id.fscore);
+        waterScore = findViewById(R.id.wscore);
+        sanityScore = findViewById(R.id.sscore);
         question = findViewById(R.id.question);
 
-        score.setText("Hunger " + mScore + "%");
+        foodScore.setText("Food " + foodValue + "%");
+        waterScore.setText("Water " + waterValue + "%");
+        sanityScore.setText("Sanity " + sanityValue + "%");
 
         updateQuestion(r.nextInt(mQuestionsLength));
 
@@ -58,8 +60,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (answer1.getText() == mAnswer) {
-                    mScore--;
-                    score.setText("Hunger " + mScore + "%");
+                    foodValue--;
+                    foodScore.setText("Food " + foodValue + "%");
                     updateQuestion(r.nextInt(mQuestionsLength));
                 }
             }
@@ -70,8 +72,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (answer2.getText() == mAnswer) {
-                    mScore--;
-                    score.setText("Hunger " + mScore + "%");
+                    foodValue--;
+                    foodScore.setText("Food " + foodValue + "%");
                     updateQuestion(r.nextInt(mQuestionsLength));
                 }
             }
@@ -82,23 +84,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (answer3.getText() == mAnswer) {
-                    mScore--;
-                    score.setText("Hunger " + mScore + "%");
+                    foodValue--;
+                    foodScore.setText("Food " + foodValue + "%");
                     updateQuestion(r.nextInt(mQuestionsLength));
                 }
             }
         });
 
-        answer4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (answer4.getText() == mAnswer) {
-                    mScore--;
-                    score.setText("Hunger " + mScore + "%");
-                    updateQuestion(r.nextInt(mQuestionsLength));
-                }
-                }
-        });
+
     }
 
     private void updateQuestion(int num) {
@@ -106,7 +99,6 @@ public class MainActivity extends AppCompatActivity {
         answer1.setText(mQuestions.getChoice1(num));
         answer2.setText(mQuestions.getChoice2(num));
         answer3.setText(mQuestions.getChoice3(num));
-        answer4.setText(mQuestions.getChoice4(num));
 
         mAnswer = mQuestions.getCorrectAnswers(num);
     }
