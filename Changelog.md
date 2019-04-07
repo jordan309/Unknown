@@ -127,7 +127,13 @@ Still working on features:
 
 # Week 5
 ## 7/04/19 - Sunday
+## Daniels Changes
 
-Daniels Work
+Created and Contributed to Gameplay Planning Document
+https://docs.google.com/spreadsheets/d/120B9Wa4GTF05mms-3UFofOC7duH0oNq_vQiT-zvBrvA/edit?usp=sharing
 
+Redesigned core gameplay features and functions. The issues the team ran into and the solutions that were come up with can be found here
+https://docs.google.com/document/d/1W-DGNVzojWl2uFtJlTu8Ut5dhOd87au7NwghmlT3_Kc/edit#
+
+The gameplay planning and redesign took up a large amount of Sunday coming up with viable solutions to the design issues.
 
