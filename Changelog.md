@@ -44,7 +44,7 @@ Still working on features:
 - Include function comments before each function, in multi-line format /* */
 
 ## Daniels Changes
-
+## Thursday + Friday
 The following art assets have been uploaded to the drawable/raw folder;
 - menutitle.png
 - menuplay.png
