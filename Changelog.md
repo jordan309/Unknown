@@ -169,3 +169,9 @@ Still working on features:
 - Add sound effects on each part of the story
 - Create a timer 
 
+# Week 6
+
+## 8/04/19 [Henry]
+- Good to see progress in general.
+- Both of you: function comments. I made a big fuss about this on the unit site last week. [Henry]
+
