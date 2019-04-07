@@ -147,4 +147,7 @@ The gameplay planning and redesign took up a large amount of Sunday coming up wi
 - Renamed Hunger to Food
 - Renamed Variable mScore to foodValue (new scores made this needed)
 - Renamed Score to foodScore
+- Added a new HomeStop Class that stops background music when the app is minimized or the phone enters sleep mode
+- Added a music pause function to the play button so music stops when the player enters character select
+- Disabled the android back button as it would cause issues with future functionality
 
