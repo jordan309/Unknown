@@ -71,4 +71,6 @@ public class IntroActivity extends AppCompatActivity {
         tabIndicator.setupWithViewPager(screenPager);
 
     }
+
+
 }

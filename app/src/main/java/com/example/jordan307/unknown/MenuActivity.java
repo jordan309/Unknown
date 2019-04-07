@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.media.MediaPlayer;
 import android.os.IBinder;
+import android.os.PowerManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,6 +15,8 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 public class MenuActivity extends AppCompatActivity {
+
+    HomeStop mHomestop;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,15 +35,39 @@ public class MenuActivity extends AppCompatActivity {
         music.setClass(this, MusicService.class);
         startService(music);
 
+        //Start HomeWatcher
+        mHomestop = new HomeStop(this);
+        mHomestop.setOnHomePressedListener(new HomeStop.OnHomePressedListener() {
+            @Override
+            public void onHomePressed() {
+                if (mServ != null) {
+                    mServ.pauseMusic();
+                }
+            }
+            @Override
+            public void onHomeLongPressed() {
+                if (mServ != null) {
+                    mServ.pauseMusic();
+                }
+            }
+        });
+        mHomestop.startWatch();
+
 
         final Button buttonplay = (Button) findViewById(R.id.PlayButton);
         buttonplay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+
                 final MediaPlayer mp = MediaPlayer.create(MenuActivity.this, R.raw.button_tap);
                 buttonplay.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        if (mServ != null) {
+                            mServ.stopMusic();
+                        }
+
                         mp.start();
                         Intent intent = new Intent(getApplicationContext(), IntroActivity.class);
                         startActivity(intent);
@@ -136,6 +163,26 @@ public class MenuActivity extends AppCompatActivity {
         music.setClass(this,MusicService.class);
         stopService(music);
 
+    }
+
+    //Disable music when the power button is pressed of the phone enters sleep mode
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        //Detect idle screen
+        PowerManager pm = (PowerManager)
+                getSystemService(Context.POWER_SERVICE);
+        boolean isScreenOn = false;
+        if (pm != null) {
+            isScreenOn = pm.isScreenOn();
+        }
+
+        if (!isScreenOn) {
+            if (mServ != null) {
+                mServ.pauseMusic();
+            }
+        }
     }
 }
 
