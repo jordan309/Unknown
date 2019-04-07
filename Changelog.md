@@ -137,3 +137,14 @@ https://docs.google.com/document/d/1W-DGNVzojWl2uFtJlTu8Ut5dhOd87au7NwghmlT3_Kc/
 
 The gameplay planning and redesign took up a large amount of Sunday coming up with viable solutions to the design issues.
 
+- Removed fourth decision button due to new game design
+- Added Character power button due to new game design
+- Reformatted the main gameplay area
+- Added background art to the main gameplay area
+- Changed text to work with newly updated background
+- Added Sanity Resource
+- Added Water Resource
+- Renamed Hunger to Food
+- Renamed Variable mScore to foodValue (new scores made this needed)
+- Renamed Score to foodScore
+
