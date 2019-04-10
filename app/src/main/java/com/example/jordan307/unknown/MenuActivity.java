@@ -4,7 +4,6 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
-import android.media.MediaPlayer;
 import android.os.IBinder;
 import android.os.PowerManager;
 import android.support.v7.app.AppCompatActivity;
@@ -63,16 +62,9 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-
-                final MediaPlayer mp = MediaPlayer.create(MenuActivity.this, R.raw.button_tap);
                 buttonplay.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        if (mServ != null) {
-                            mServ.stopMusic();
-                        }
-
-                        mp.start();
                         Intent intent = new Intent(getApplicationContext(), IntroActivity.class);
                         startActivity(intent);
                     }
@@ -84,11 +76,9 @@ public class MenuActivity extends AppCompatActivity {
         buttonabout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final MediaPlayer dp = MediaPlayer.create(MenuActivity.this,R.raw.button_tap);
                 buttonabout.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        dp.start();
                         Intent intent = new Intent(getApplicationContext(), AboutActivity.class);
                         startActivity(intent);
                     }
@@ -100,11 +90,9 @@ public class MenuActivity extends AppCompatActivity {
         buttonsettings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final MediaPlayer cp = MediaPlayer.create(MenuActivity.this,R.raw.button_tap);
                 buttonsettings.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        cp.start();
                         Intent intent = new Intent(getApplicationContext(), SettingsActivity.class);
                         startActivity(intent);
                     }

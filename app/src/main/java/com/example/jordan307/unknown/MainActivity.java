@@ -8,10 +8,10 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.util.Random;
-
 public class MainActivity extends AppCompatActivity {
 
+    private TextView mTextViewCount;
+    private int mCount;
 
     //Disable Back Button
     @Override
@@ -27,9 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private int foodValue = 100;
     private int waterValue = 100;
     private int sanityValue = 100;
-    private int mQuestionsLength = mQuestions.mQuestions.length;
-
-    Random r;
+    private int mQuestionNumber = 0;
 
 
     @Override
@@ -43,7 +41,8 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        r = new Random();
+        mTextViewCount = findViewById(R.id.answer1);
+
 
         answer1 = findViewById(R.id.answer1);
         answer2 = findViewById(R.id.answer2);
@@ -58,16 +57,14 @@ public class MainActivity extends AppCompatActivity {
         waterScore.setText("Water " + waterValue + "%");
         sanityScore.setText("Sanity " + sanityValue + "%");
 
-        updateQuestion(r.nextInt(mQuestionsLength));
+        updateQuestion();
 
 
         answer1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (answer1.getText() == mAnswer) {
-                    foodValue--;
-                    foodScore.setText("Food " + foodValue + "%");
-                    updateQuestion(r.nextInt(mQuestionsLength));
+                    updateQuestion();
                 }
             }
         });
@@ -77,9 +74,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (answer2.getText() == mAnswer) {
-                    foodValue--;
-                    foodScore.setText("Food " + foodValue + "%");
-                    updateQuestion(r.nextInt(mQuestionsLength));
+                    updateQuestion();
                 }
             }
 
@@ -89,9 +84,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (answer3.getText() == mAnswer) {
-                    foodValue--;
-                    foodScore.setText("Food " + foodValue + "%");
-                    updateQuestion(r.nextInt(mQuestionsLength));
+                    updateQuestion();
                 }
             }
         });
@@ -99,13 +92,23 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void updateQuestion(int num) {
-        question.setText(mQuestions.getQuestions(num));
-        answer1.setText(mQuestions.getChoice1(num));
-        answer2.setText(mQuestions.getChoice2(num));
-        answer3.setText(mQuestions.getChoice3(num));
+    private void updateQuestion() {
+        if (mQuestionNumber < mQuestions.getLength()) {
+            question.setText(mQuestions.getQuestions(mQuestionNumber));
+            answer1.setText(mQuestions.getChoice1(mQuestionNumber));
+            answer2.setText(mQuestions.getChoice2(mQuestionNumber));
+            answer3.setText(mQuestions.getChoice3(mQuestionNumber));
 
-        mAnswer = mQuestions.getCorrectAnswers(num);
+            mAnswer = mQuestions.getCorrectAnswers(mQuestionNumber);
+            mQuestionNumber++;
+
+        }
+
+    }
+
+    private void decrement() {
+        mCount++;
+        mTextViewCount.setText(String.valueOf(mCount));
     }
 
 }

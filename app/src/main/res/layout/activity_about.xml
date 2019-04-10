@@ -54,7 +54,7 @@
                 android:layout_marginTop="40dp"
                 android:layout_marginEnd="0dp"
                 android:layout_marginBottom="0dp"
-                android:text="The end of civilization is near, spirits roam this earth now. They can see you but you can't see them. You have to hide when necessary, collect food, water and find shelter to survive. You may come across other survivors, be careful who you choose to trust.\n\nYou will start with 100% on hunger, dehydration and hyperthermia levels. The choices you make will result in either decreasing or increasing these levels so be sure to remember to check these levels.\n\nSurvival will be determined by the choices you make. Think you can survive for 100 hours? The further you progress into a story of a character, the more difficult it will be to survive.\n\nMay God be with you. "
+                android:text="The end of civilization is near, spirits roam this earth now. They can see you but you can't see them. You have to hide when necessary, collect food, water and keep sane to survive. You may come across other survivors, be careful who you choose to trust.\n\nYou will start with 100% on hunger, hydration and sanity levels. The choices you make will result in either decreasing or increasing these levels so be sure to remember to check these levels.\n\nSurvival will be determined by the choices you make. Think you can survive for 100 hours? The further you progress into a story of a character, the more difficult it will be to survive.\n\nNo God can save you from death and if one could that would be evil..."
                 android:textColor="#fff"
                 android:textSize="18sp" />
 
