@@ -3,6 +3,10 @@ Images Files:
 App Logo
 Created by Jordan Wood.
 
+Percentage icons: 
+Android Studio icons.
+Hunger icon created by Jordan Wood
+
 Volume icons
 Android Studio icons. 
 
@@ -19,3 +23,6 @@ https://www.freepik.com/free-vector/men-hairstyle-collection_3998594.htm [Access
 
 Background Art and Menu Text
 Created by Daniel Harwood
+
+Background Art for Main screen
+Unsplash, Alone In The Woods | HD photo by m wrona (@maciek_wrona) on Unsplash. Beautiful Free Images & Pictures. Available at: https://unsplash.com/photos/pCgxm-HDMNs [Accessed April 10, 2019].
