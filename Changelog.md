@@ -175,3 +175,27 @@ Still working on features:
 - Good to see progress in general.
 - Both of you: function comments. I made a big fuss about this on the unit site last week. [Henry]
 
+# Week 6
+
+# 10/04/19 Wednesday
+
+Jordan - landscape mode now shows all screens properly. The gameplay is now in order and works. 
+
+Features added:
+- Reduce background image size
+- Update about page
+- Story is in order
+- Added Icons next to percentages
+- Added Background for main activity / gameplay 
+- Landscape activity mode for all screens
+
+
+Still working on features: 
+- Save state on rotation
+- Percentage levels increase / decrease based on button choice
+- Sound effects for each part of the story
+- Create timer
+- Load / save game 
+
+
+
