@@ -126,8 +126,7 @@ Still working on features:
 **We have a weird issue Henry, the background music is still low when I turn it up but for Daniel it's normal volume.**
 
 # Week 5
-## 7/04/19 - Sunday
-## Daniels Changes
+## 7/04/19 - Sunday [Daniel]
 
 Created and Contributed to Gameplay Planning Document
 https://docs.google.com/spreadsheets/d/120B9Wa4GTF05mms-3UFofOC7duH0oNq_vQiT-zvBrvA/edit?usp=sharing
@@ -151,8 +150,8 @@ The gameplay planning and redesign took up a large amount of Sunday coming up wi
 - Added a music pause function to the play button so music stops when the player enters character select
 - Disabled the android back button as it would cause issues with future functionality
 
-# Week 5
-## 7/04/19 - Sunday / Monday
+
+## 7/04/19 - Sunday [Jordan]
 
 Jordan - I have been working on a google sheet to plan out all 50 parts of the storyline with 3 available choices. These choices will affect the hunger, hydration and sanity levels. 
 
@@ -177,7 +176,7 @@ Still working on features:
 
 # Week 6
 
-# 10/04/19 Wednesday
+# 10/04/19 Wednesday [Jordan]
 
 Jordan - landscape mode now shows all screens properly. The gameplay is now in order and works. 
 
@@ -196,6 +195,11 @@ Still working on features:
 - Sound effects for each part of the story
 - Create timer
 - Load / save game 
+
+# 11/04/19 Thursday [Henry]
+- Good to see some progress.
+- Still missing function comments in places.
+
 
 
 
