@@ -201,5 +201,19 @@ Still working on features:
 - Still missing function comments in places.
 
 
+# Week 6
+## 12/04/19 - Friday [Daniel]
+
+- Fixed an issue with sound not stopping when the play button was pressed
+- Added additional function comments
+- Extended some function comments that were previously to short for what the fucntion did
+- Set up a new class containing a constructor function for the new array system which will be used to load all of the game data for each new question the player is posed with.
+
+Tomorrows work:
+- Finish constructor function
+- Create Arrray
+- Insert all game data into array
+- Connect array to the game functions
+- Test game to ensure it works
 
 
