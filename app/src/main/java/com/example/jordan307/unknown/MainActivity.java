@@ -117,6 +117,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+<<<<<<< HEAD
     @Override
     protected void onSaveInstanceState(Bundle outState) {
 
@@ -136,4 +137,6 @@ public class MainActivity extends AppCompatActivity {
         answer2.setText(savedInstanceState.getString("answer2"));
         answer3.setText(savedInstanceState.getString("answer3"));
     }
+=======
+>>>>>>> e5862c0b0d97ae13135edc9cf1e7f78223b7031f
 }
