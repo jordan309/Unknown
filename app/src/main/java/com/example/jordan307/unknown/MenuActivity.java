@@ -32,13 +32,15 @@ public class MenuActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_menu);
 
-        //Initiate Music Service
+        //Function to start the background music playing (will run untill it is disabled or stopped via another function)
         doBindService();
         Intent music = new Intent();
         music.setClass(this, MusicService.class);
         startService(music);
 
-        //Start HomeWatcher
+        /*Start HomeWatcher function which is responsible for checking if the application has been minimized or the phone has entered sleep mode,
+        if this is the case it will pause the background music to prevent it continuing playing while the app is not active.
+        */
         mHomestop = new HomeStop(this);
         mHomestop.setOnHomePressedListener(new HomeStop.OnHomePressedListener() {
             @Override
@@ -56,7 +58,7 @@ public class MenuActivity extends AppCompatActivity {
         });
         mHomestop.startWatch();
 
-
+        // Navigated the user to the character select screen and also pauses the menu background music to allow for new more appropriate music to be initiated.
         final Button buttonplay = (Button) findViewById(R.id.PlayButton);
         buttonplay.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,6 +67,9 @@ public class MenuActivity extends AppCompatActivity {
                 buttonplay.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        if (mServ != null) {
+                            mServ.stopMusic();
+                        }
                         Intent intent = new Intent(getApplicationContext(), IntroActivity.class);
                         startActivity(intent);
                     }
@@ -72,6 +77,7 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
+        //Navigates the user to the about page
         final Button buttonabout = (Button) findViewById(R.id.AboutButton);
         buttonabout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,6 +92,7 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
+        //Navigates the user to the settings page
         final Button buttonsettings = (Button) findViewById(R.id.SettingsButton);
         buttonsettings.setOnClickListener(new View.OnClickListener() {
             @Override

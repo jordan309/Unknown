@@ -1,5 +1,6 @@
 package com.example.jordan307.unknown;
 
+import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,11 +23,13 @@ public class MainActivity extends AppCompatActivity {
     TextView foodScore, waterScore, sanityScore, question;
 
     private Questions mQuestions = new Questions();
-
     private String mAnswer;
+
+    //Player resource variables
     private int foodValue = 100;
     private int waterValue = 100;
     private int sanityValue = 100;
+    //Question number variable
     private int mQuestionNumber = 0;
 
 
@@ -43,16 +46,18 @@ public class MainActivity extends AppCompatActivity {
 
         mTextViewCount = findViewById(R.id.answer1);
 
-
+        //Associating the answer variables with the appropriate elements on the page
         answer1 = findViewById(R.id.answer1);
         answer2 = findViewById(R.id.answer2);
         answer3 = findViewById(R.id.answer3);
 
+        //Associating the resource and question variables with the appropriate elements on the page
         foodScore = findViewById(R.id.fscore);
         waterScore = findViewById(R.id.wscore);
         sanityScore = findViewById(R.id.sscore);
         question = findViewById(R.id.question);
 
+        //Assigning text to the elements on the page based on the current values of the resources
         foodScore.setText("Food " + foodValue + "%");
         waterScore.setText("Water " + waterValue + "%");
         sanityScore.setText("Sanity " + sanityValue + "%");
@@ -111,4 +116,24 @@ public class MainActivity extends AppCompatActivity {
         mTextViewCount.setText(String.valueOf(mCount));
     }
 
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+
+        outState.putString("story",question.getText().toString());
+        outState.putString("answer1",answer1.getText().toString());
+        outState.putString("answer2",answer2.getText().toString());
+        outState.putString("answer3",answer3.getText().toString());
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        question.setText(savedInstanceState.getString("story"));
+        answer1.setText(savedInstanceState.getString("answer1"));
+        answer2.setText(savedInstanceState.getString("answer2"));
+        answer3.setText(savedInstanceState.getString("answer3"));
+    }
 }
