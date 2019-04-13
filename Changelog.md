@@ -257,3 +257,8 @@ In order to make the game work I created the following new variables and added m
 Answer Effect Values indicated the interger value of how the answer on any specific question will effect the players resources.
 Answer Effect Operator determines if the above integer is positive or negative
 Type dictates which resource the above to values are effecting between hunger, water, sanity
+
+# Week 6
+## 14/04/19 - Sunday [Daniel]
+
+- Added all 50 scenarios to the multidimensional array ready for the rest of the story and data to be input into
