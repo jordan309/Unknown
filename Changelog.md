@@ -216,4 +216,17 @@ Tomorrows work:
 - Connect array to the game functions
 - Test game to ensure it works
 
+# Week 6
+## 13/04/19 - Saturday [Jordan]
+
+Features added:
+- SaveInstance State on rotation 
+
+Still working on features: 
+- Save state on rotation
+- Percentage levels increase / decrease based on button choice
+- Sound effects for each part of the story
+- Create timer
+- Load / save game 
+
 
