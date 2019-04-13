@@ -2,9 +2,9 @@ package com.example.jordan307.unknown;
 
 public class Questions {
 
-    public int getLength(){return mQuestions.length;}
+    public int getLength(){return GameDataArray[0].length;}
 
-    public String mQuestions[] = {
+   /*
             "You open your eyes and can't remember anything. You are so hungry and need to eat something as soon as possible, you are at a camp site and notice some old food lying around. An apple that is soft to the touch, some moldy bread and some meat.",
             "Your vision is a little blurry but you can see something moving in the distance. You don't know how you got outside or what is happening.",
             "You aren't sure if what you just saw was real or you are hallucinating you need to find a clue and try to remember. You are in the middle of the campsite with a small village ahead and a forest behind you.",
@@ -20,12 +20,12 @@ public class Questions {
             "The spirits come into the house, they must have heard the radio signal! You jump out through the window and see one right in front of you. It's coming towards you.",
             "You sense and feel death. Whispers in the distance, you're starting to lose your sanity. What's the point anymore? You think to yourself. It's not worth living in a world that is unlivable.",
             "You quickly snap out and see your friend who stole your backpack trapped by spirits with no escape. They will not survive unless you intervene and do something.",
+*/
 
 
 
 
-    };
-
+/*
     private String mChoices[] [] = {
             {"Eat the Meat", "Eat the Bread", "Eat the Apple"},
             {"Approach object", "Hide behind camp tent to get a better look", "Pour water over your eyes"},
@@ -44,42 +44,100 @@ public class Questions {
             {"Let your friend die", "Scream to get the spirits attention", "Go over and help"}
     };
 
-    private String mCorrectAnswers[] = {"Eat the Apple", "Pour water over your eyes", "Search campsite for clues",
-            "Find a vehicle", "Drive to friend", "Turn around to hand your friend water", "Ditch car, quietly go to nearby river",
-            "Go to the shopping centre", "Run as fast as you can to the house", "Take the woodpile and light the fireplace",
-            "Salt all of the entrances of the building", "Look around for more clues", "Run around the spirit", "Think of a memory",
-            "Go over and help"};
+*/
 
-    public String getQuestions(int a) {
-        String question = mQuestions[a];
+
+    private String GameDataArray [] [] [] [] []= {
+            //Scenario Level
+            {
+                    {//question
+                        {{"You open your eyes and can't remember anything. You are so hungry and need to eat something as soon as possible, you are at a camp site and notice some old food lying around. An apple that is soft to the touch, some moldy bread and some meat."},{""}}
+                    },
+                    {//options
+                        {{"Eat the Meat"},{""}},
+                        {{"Eat the Bread"},{""}},
+                        {{"Eat the Apple"},{""}}
+                    },
+                    {//answer effects
+                        {
+                            {"Neg"},{"20"}
+                        },
+                        {
+                            {"Pos"},{"10"}
+                        },
+                        {
+                            {"Pos"},{"20"}
+                        },
+                    },
+                    {//answer types
+                        {{"Hunger"},{""}},
+                        {{"Water"},{""}},
+                        {{"Sanity"},{""}}
+                    }
+            },
+
+            //Scenario Level
+            {
+                    {//question
+                            {{"You open your eyes and can't remember anything. You are so hungry and need to eat something as soon as possible, you are at a camp site and notice some old food lying around. An apple that is soft to the touch, some moldy bread and some meat."},{""}}
+                    },
+                    {//options
+                            {{"Fk"},{""}},
+                            {{"U"},{""}},
+                            {{"Android"},{""}}
+                    },
+                    {//answer effects
+                            {
+                                    {"Neg"},{"20"}
+                            },
+                            {
+                                    {"Pos"},{"10"}
+                            },
+                            {
+                                    {"Pos"},{"20"}
+                            },
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+                            {{"Sanity"},{""}}
+                    }
+            },
+
+            //Scenario Level
+            {
+                    {//question
+                            {{"You open your eyes and can't remember anything. You are so hungry and need to eat something as soon as possible, you are at a camp site and notice some old food lying around. An apple that is soft to the touch, some moldy bread and some meat."},{"0"}}
+                    },
+                    {//options
+                            {{"Eat the Meat"},{"0"}},
+                            {{"Eat the Bread"},{"0"}},
+                            {{"Eat the Apple"},{"0"}}
+                    },
+                    {//answer effects
+                            {
+                                    {"Neg"},{"20"}
+                            },
+                            {
+                                    {"Pos"},{"10"}
+                            },
+                            {
+                                    {"Pos"},{"20"}
+                            },
+                    },
+                    {//answer types
+                            {{"Hunger"},{"0"}},
+                            {{"Water"},{"0"}},
+                            {{"Sanity"},{"0"}}
+                    }
+            },
+
+    };
+
+
+    public String getQuestionData(int a, int b, int c, int d, int e) {
+        String question = GameDataArray[a][b][c][d][e];
         return question;
     }
-
-    public String getChoice1(int a) {
-        String choice = mChoices[a][0];
-        return choice;
-    }
-
-    public String getChoice2(int a) {
-        String choice = mChoices[a][1];
-        return choice;
-    }
-
-    public String getChoice3(int a) {
-        String choice = mChoices[a][2];
-        return choice;
-    }
-
-    public String getChoice4(int a) {
-        String choice = mChoices[a][3];
-        return choice;
-    }
-
-    public String getCorrectAnswers(int a) {
-        String answer = mCorrectAnswers[a];
-        return answer;
-    }
-
-
 
 }

@@ -18,17 +18,37 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed(){}
 
+
+    private void initialScores() {
+        foodScore.setText("Food " + foodValue + "%");
+        waterScore.setText("Water " + waterValue + "%");
+        sanityScore.setText("Sanity " + sanityValue + "%");
+    }
+
+    //Defining the buttons
     Button answer1, answer2, answer3;
 
     TextView foodScore, waterScore, sanityScore, question;
 
     private Questions mQuestions = new Questions();
-    private String mAnswer;
+
 
     //Player resource variables
     private int foodValue = 100;
     private int waterValue = 100;
     private int sanityValue = 100;
+
+    //Question Variables
+    private String mA1AnswerEffectValues;
+    private String mA2AnswerEffectValues;
+    private String mA3AnswerEffectValues;
+    private String mA1AnswerEffectOperator;
+    private String mA2AnswerEffectOperator;
+    private String mA3AnswerEffectOperator;
+    private String mA1Type;
+    private String mA2Type;
+    private String mA3Type;
+
     //Question number variable
     private int mQuestionNumber = 0;
 
@@ -36,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
 
         // Activity set to full screen
         requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -58,19 +79,41 @@ public class MainActivity extends AppCompatActivity {
         question = findViewById(R.id.question);
 
         //Assigning text to the elements on the page based on the current values of the resources
-        foodScore.setText("Food " + foodValue + "%");
-        waterScore.setText("Water " + waterValue + "%");
-        sanityScore.setText("Sanity " + sanityValue + "%");
+
 
         updateQuestion();
+        initialScores();
 
 
         answer1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (answer1.getText() == mAnswer) {
-                    updateQuestion();
+                switch(mA1Type) {
+                    case "Hunger":
+                        if (mA1AnswerEffectOperator == "Pos" ){
+                            foodValue += Integer.parseInt(mA1AnswerEffectValues);
+                        }else{
+                            foodValue -= Integer.parseInt(mA1AnswerEffectValues);
+                        }
+                        break;
+                    case "Water":
+                        if (mA1AnswerEffectOperator == "Pos" ){
+                            waterValue += Integer.parseInt(mA1AnswerEffectValues);
+                        }else{
+                            waterValue -= Integer.parseInt(mA1AnswerEffectValues);
+                        }
+                        break;
+                    case "Sanity":
+                        if (mA1AnswerEffectOperator == "Pos" ){
+                            sanityValue += Integer.parseInt(mA1AnswerEffectValues);
+                        }else{
+                            sanityValue -= Integer.parseInt(mA1AnswerEffectValues);
+                        }
+                        break;
+
                 }
+                updateScores();
+                updateQuestion();
             }
         });
 
@@ -78,9 +121,32 @@ public class MainActivity extends AppCompatActivity {
         answer2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (answer2.getText() == mAnswer) {
-                    updateQuestion();
+                switch(mA2Type) {
+                    case "Hunger":
+                        if (mA2AnswerEffectOperator == "Pos" ){
+                            foodValue += Integer.parseInt(mA2AnswerEffectValues);
+                        }else{
+                            foodValue -= Integer.parseInt(mA2AnswerEffectValues);
+                        }
+                        break;
+                    case "Water":
+                        if (mA2AnswerEffectOperator == "Pos" ){
+                            waterValue += Integer.parseInt(mA2AnswerEffectValues);
+                        }else{
+                            waterValue -= Integer.parseInt(mA2AnswerEffectValues);
+                        }
+                        break;
+                    case "Sanity":
+                        if (mA2AnswerEffectOperator == "Pos" ){
+                            sanityValue += Integer.parseInt(mA2AnswerEffectValues);
+                        }else{
+                            sanityValue -= Integer.parseInt(mA2AnswerEffectValues);
+                        }
+                        break;
+
                 }
+                updateScores();
+                updateQuestion();
             }
 
         });
@@ -88,25 +154,66 @@ public class MainActivity extends AppCompatActivity {
         answer3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (answer3.getText() == mAnswer) {
-                    updateQuestion();
+                switch(mA3Type) {
+                    case "Hunger":
+                        if (mA3AnswerEffectOperator == "Pos" ){
+                            foodValue += Integer.parseInt(mA3AnswerEffectValues);
+                        }else{
+                            foodValue -= Integer.parseInt(mA3AnswerEffectValues);
+                        }
+                        break;
+                    case "Water":
+                        if (mA3AnswerEffectOperator == "Pos" ){
+                            waterValue += Integer.parseInt(mA3AnswerEffectValues);
+                        }else{
+                            waterValue -= Integer.parseInt(mA3AnswerEffectValues);
+                        }
+                        break;
+                    case "Sanity":
+                        if (mA3AnswerEffectOperator == "Pos" ){
+                            sanityValue += Integer.parseInt(mA3AnswerEffectValues);
+                        }else{
+                            sanityValue -= Integer.parseInt(mA3AnswerEffectValues);
+                        }
+                        break;
+
                 }
+                updateScores();
+                updateQuestion();
+
             }
         });
 
 
     }
+    private void updateScores() {
+        foodScore.setText("Food " + foodValue + "%");
+        waterScore.setText("Water " + waterValue + "%");
+        sanityScore.setText("Sanity " + sanityValue + "%");
+    }
 
     private void updateQuestion() {
-        if (mQuestionNumber < mQuestions.getLength()) {
-            question.setText(mQuestions.getQuestions(mQuestionNumber));
-            answer1.setText(mQuestions.getChoice1(mQuestionNumber));
-            answer2.setText(mQuestions.getChoice2(mQuestionNumber));
-            answer3.setText(mQuestions.getChoice3(mQuestionNumber));
+        if (mQuestionNumber < 50) {
+            question.setText(mQuestions.getQuestionData( mQuestionNumber,0,  0, 0, 0));
 
-            mAnswer = mQuestions.getCorrectAnswers(mQuestionNumber);
+
+
+            answer1.setText(mQuestions.getQuestionData(mQuestionNumber, 1, 0, 0, 0));
+            answer2.setText(mQuestions.getQuestionData(mQuestionNumber, 1, 1, 0, 0));
+            answer3.setText(mQuestions.getQuestionData(mQuestionNumber, 1, 2, 0, 0));
+            mA1AnswerEffectValues = mQuestions.getQuestionData(mQuestionNumber, 2, 0, 1, 0);
+            mA2AnswerEffectValues = mQuestions.getQuestionData(mQuestionNumber, 2, 1, 1, 0);
+            mA3AnswerEffectValues = mQuestions.getQuestionData(mQuestionNumber, 2, 2, 1, 0);
+            mA1AnswerEffectOperator = mQuestions.getQuestionData(mQuestionNumber, 2, 0, 0, 0);
+            mA2AnswerEffectOperator = mQuestions.getQuestionData(mQuestionNumber, 2, 1, 0, 0);
+            mA3AnswerEffectOperator = mQuestions.getQuestionData(mQuestionNumber, 2, 2, 0, 0);
+            mA1Type = mQuestions.getQuestionData(mQuestionNumber, 3, 0, 0, 0);
+            mA2Type = mQuestions.getQuestionData(mQuestionNumber, 3, 1, 0, 0);
+            mA3Type = mQuestions.getQuestionData(mQuestionNumber, 3, 2, 0, 0);
+
             mQuestionNumber++;
 
+            System.out.println(mA1AnswerEffectValues);
         }
 
     }
@@ -117,7 +224,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-<<<<<<< HEAD
     @Override
     protected void onSaveInstanceState(Bundle outState) {
 
@@ -137,6 +243,4 @@ public class MainActivity extends AppCompatActivity {
         answer2.setText(savedInstanceState.getString("answer2"));
         answer3.setText(savedInstanceState.getString("answer3"));
     }
-=======
->>>>>>> e5862c0b0d97ae13135edc9cf1e7f78223b7031f
 }
