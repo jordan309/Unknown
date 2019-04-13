@@ -228,4 +228,32 @@ Still working on features:
 - Create timer
 - Load / save game 
 
+# Week 6
+## 13/04/19 - Saturday [Daniel]
 
+The following work is the result of many hard hours of learning and tutorials to understand multidimensonal arrays and how they can be used to solve the data issue with our game without the use of a database.
+
+- Remade the questions class
+- Added a 5 dimensional array to the questions class that allows data for the game to be stored and accessed
+- Added 4 of the questions and all their data to the array
+- Created a new getQuestionData function
+- Remade the update Question Function to include all the new variables contained in the array
+- Added new update scores function
+- Recoded the on click listeners attatched to the answer buttons
+- Added a switch to each listener to use the data being pulled from the array to effect the player resources
+
+
+In order to make the game work I created the following new variables and added made sure they interacted with the array containing the game data.
+- mA1AnswerEffectValues
+- mA2AnswerEffectValues
+- mA3AnswerEffectValues
+- mA1AnswerEffectOperator
+- mA2AnswerEffectOperator
+- mA3AnswerEffectOperator
+- mA1Type
+- mA2Type
+- mA3Type
+
+Answer Effect Values indicated the interger value of how the answer on any specific question will effect the players resources.
+Answer Effect Operator determines if the above integer is positive or negative
+Type dictates which resource the above to values are effecting between hunger, water, sanity
