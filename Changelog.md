@@ -223,7 +223,6 @@ Features added:
 - SaveInstance State on rotation 
 
 Still working on features: 
-- Save state on rotation
 - Percentage levels increase / decrease based on button choice
 - Sound effects for each part of the story
 - Create timer
