@@ -262,3 +262,19 @@ Type dictates which resource the above to values are effecting between hunger, w
 ## 14/04/19 - Sunday [Daniel]
 
 - Added all 50 scenarios to the multidimensional array ready for the rest of the story and data to be input into
+
+
+# Week 6
+
+# 14/04/19 Sunday [Jordan]
+
+Features added:
+- All positive and negative effects to each answer
+- Finished complete story
+- Added comments to functions/methods
+
+
+Still working on features: 
+- Load / save game 
+- Create timer
+- Sound effects for each part of the story
