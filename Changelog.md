@@ -275,6 +275,8 @@ Features added:
 
 
 Still working on features: 
+- Create countdown timer
 - Load / save game 
-- Create timer
+- Log page of saves
+- Button loads and saves data
 - Sound effects for each part of the story
