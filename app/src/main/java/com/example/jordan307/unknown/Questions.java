@@ -12,6 +12,7 @@ public class Questions {
                         {{"You open your eyes and can't remember anything. You are so hungry and need to eat something as soon as possible, you are at a camp site and notice some old food lying around. An apple that is soft to the touch, some moldy bread and some meat."},{""}}
                     },
                     {//options
+<<<<<<< HEAD
                         {{"Eat the Bread"},{""}},
                         {{"Eat the Meat"},{""}},
                         {{"Eat the Apple"},{""}}
@@ -25,6 +26,21 @@ public class Questions {
                         {{"Hunger"},{""}},
                         {{"Hunger"},{""}},
                         {{"Hunger"},{""}}
+=======
+                        {{"Eat the Meat"},{""}},
+                        {{"Eat the Bread"},{""}},
+                        {{"Eat the Apple"},{""}}
+                    },
+                    {//answer effects
+                        {{"Neg"},{"20"}},
+                        {{"Pos"},{"10"}},
+                        {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                        {{"Hunger"},{""}},
+                        {{"Water"},{""}},
+                        {{"Sanity"},{""}}
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                     }
             },
 
@@ -34,6 +50,7 @@ public class Questions {
                             {{"Your vision is a little blurry but you can see something moving in the distance. You don't know how you got outside or what is happening."},{""}}
                     },
                     {//options
+<<<<<<< HEAD
                             {{"Pour water over your eyes"},{""}},
                             {{"Approach object"},{""}},
                             {{"Hide behind camp tent to get a better look"},{""}}
@@ -69,7 +86,42 @@ public class Questions {
                     {//answer types
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
+=======
+                            {{"Approach object"},{""}},
+                            {{"Hide behind camp tent to get a better look"},{""}},
+                            {{"Pour water over your eyes"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
                             {{"Sanity"},{""}}
+                    }
+            },
+
+            //Scenario Level 3
+            {
+                    {//question
+                            {{"You aren't sure if what you just saw was real or you are hallucinating you need to find a clue and try to remember. You are in the middle of the campsite with a small village ahead and a forest behind you."},{"0"}}
+                    },
+                    {//options
+                            {{"Search Forest For Clues"},{"0"}},
+                            {{"Search Town for Clues"},{"0"}},
+                            {{"Search campsite for clues"},{"0"}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{"0"}},
+                            {{"Water"},{"0"}},
+                            {{"Sanity"},{"0"}}
                     }
             },
 
@@ -84,6 +136,34 @@ public class Questions {
                             {{"Find a vehicle"},{""}}
                     },
                     {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
+                            {{"Sanity"},{""}}
+                    }
+            },
+
+<<<<<<< HEAD
+            //Scenario Level 4
+=======
+            //Scenario Level 5
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
+            {
+                    {//question
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+<<<<<<< HEAD
                             {{"Neg"},{"15"}},
                             {{"Pos"},{"5"}},
                             {{"Pos"},{"10"}},
@@ -91,10 +171,20 @@ public class Questions {
                     {//answer types
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
+=======
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                             {{"Sanity"},{""}}
                     }
             },
 
+<<<<<<< HEAD
             //Scenario Level 5
             {
                     {//question
@@ -109,6 +199,22 @@ public class Questions {
                             {{"Neg"},{"10"}},
                             {{"Neg"},{"5"}},
                             {{"Pos"},{"5"}},
+=======
+            //Scenario Level 6
+            {
+                    {//question
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                     },
                     {//answer types
                             {{"Hunger"},{""}},
@@ -117,6 +223,7 @@ public class Questions {
                     }
             },
 
+<<<<<<< HEAD
             //Scenario Level 6
             {
                     {//question
@@ -201,10 +308,97 @@ public class Questions {
                     {//answer types
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
+=======
+            //Scenario Level 7
+            {
+                    {//question
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
                             {{"Sanity"},{""}}
                     }
             },
 
+            //Scenario Level 8
+            {
+                    {//question
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+                            {{"Sanity"},{""}}
+                    }
+            },
+
+            //Scenario Level 9
+            {
+                    {//question
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+                            {{"Sanity"},{""}}
+                    }
+            },
+
+            //Scenario Level 10
+            {
+                    {//question
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
+                            {{"Sanity"},{""}}
+                    }
+            },
+
+<<<<<<< HEAD
             //Scenario Level 10
             {
                     {//question
@@ -223,10 +417,31 @@ public class Questions {
                     {//answer types
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
+=======
+            //Scenario Level 11
+            {
+                    {//question
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                             {{"Sanity"},{""}}
                     }
             },
 
+<<<<<<< HEAD
             //Scenario Level 11
             {
                     {//question
@@ -241,6 +456,22 @@ public class Questions {
                             {{"Neg"},{"20"}},
                             {{"Neg"},{"10"}},
                             {{"Pos"},{"5"}},
+=======
+            //Scenario Level 12
+            {
+                    {//question
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                     },
                     {//answer types
                             {{"Hunger"},{""}},
@@ -249,6 +480,7 @@ public class Questions {
                     }
             },
 
+<<<<<<< HEAD
             //Scenario Level 12
             {
                     {//question
@@ -289,6 +521,26 @@ public class Questions {
                     {//answer types
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
+=======
+            //Scenario Level 13
+            {
+                    {//question
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                             {{"Sanity"},{""}}
                     }
             },
@@ -296,6 +548,7 @@ public class Questions {
             //Scenario Level 14
             {
                     {//question
+<<<<<<< HEAD
                             {{"You sense and feel death. Whispers in the distance, you're starting to lose your sanity. What's the point anymore? You think to yourself. It's not worth living in a world that is unliveable. "},{""}}
                     },
                     {//options
@@ -305,12 +558,28 @@ public class Questions {
                     },
                     {//answer effects
                             {{"Neg"},{"100"}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                             {{"Pos"},{"10"}},
                             {{"Pos"},{"20"}},
                     },
                     {//answer types
+<<<<<<< HEAD
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
+=======
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                             {{"Sanity"},{""}}
                     }
             },
@@ -318,6 +587,7 @@ public class Questions {
             //Scenario Level 15
             {
                     {//question
+<<<<<<< HEAD
                             {{"You quickly snap out and see your friend who stole your backpack trapped by spirits with no escape. They will not survive unless you intervene and do something. "},{""}}
                     },
                     {//options
@@ -333,6 +603,23 @@ public class Questions {
                     {//answer types
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                             {{"Sanity"},{""}}
                     }
             },
@@ -340,6 +627,7 @@ public class Questions {
             //Scenario Level 16
             {
                     {//question
+<<<<<<< HEAD
                             {{"You run along the river, the spirits are getting closer. There is a boat near the river, you use it and head down the rivers path. You see bodies of lost souls in the river. "},{""}}
                     },
                     {//options
@@ -350,18 +638,35 @@ public class Questions {
                     {//answer effects
                             {{"Neg"},{"10"}},
                             {{"Neg"},{"10"}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                             {{"Pos"},{"20"}},
                     },
                     {//answer types
                             {{"Hunger"},{""}},
                             {{"Water"},{""}},
+<<<<<<< HEAD
                             {{"Hunger"},{""}}
+=======
+                            {{"Sanity"},{""}}
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                     }
             },
 
             //Scenario Level 17
             {
                     {//question
+<<<<<<< HEAD
                             {{"You reach the end of the river bank. It's dead quiet, no spirits either. You are grabbed from behind in a choke hold with a weapon up against your back. "},{""}}
                     },
                     {//options
@@ -373,16 +678,34 @@ public class Questions {
                             {{"Neg"},{"10"}},
                             {{"Neg"},{"10"}},
                             {{"Pos"},{"10"}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                     },
                     {//answer types
                             {{"Hunger"},{""}},
                             {{"Water"},{""}},
+<<<<<<< HEAD
                             {{"Water"},{""}}
+=======
+                            {{"Sanity"},{""}}
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                     }
             },
             //Scenario Level 18
             {
                     {//question
+<<<<<<< HEAD
                             {{"The person releases you from their hold. You give up your backpack and shoes in return for a lift to Oakville. "},{""}}
                     },
                     {//options
@@ -394,6 +717,19 @@ public class Questions {
                             {{"Neg"},{"20"}},
                             {{"Neg"},{"10"}},
                             {{"Pos"},{"5"}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                     },
                     {//answer types
                             {{"Hunger"},{""}},
@@ -405,6 +741,7 @@ public class Questions {
             //Scenario Level 19
             {
                     {//question
+<<<<<<< HEAD
                             {{"You arrive at a destination that is not Oakville. You get increasingly nervous and anxious. The person ties you up to a tree outside and drives away. In the distance you see spirits coming, you do not have much time. "},{""}}
                     },
                     {//options
@@ -416,6 +753,19 @@ public class Questions {
                             {{"Neg"},{"20"}},
                             {{"Pos"},{"5"}},
                             {{"Pos"},{"10"}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                     },
                     {//answer types
                             {{"Hunger"},{""}},
@@ -427,12 +777,21 @@ public class Questions {
             //Scenario Level 20
             {
                     {//question
+<<<<<<< HEAD
                             {{"You managed to untie yourself from the tree. You can see an island just off the lake in the distance, it's Oakville! You have nearly made it!"},{""}}
                     },
                     {//options
                             {{"Don't go to Oakville"},{""}},
                             {{"Find boat to float to Oakville"},{""}},
                             {{"Swim to Oakville!"},{""}}
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                     },
                     {//answer effects
                             {{"Neg"},{"20"}},
@@ -449,6 +808,7 @@ public class Questions {
             //Scenario Level 21
             {
                     {//question
+<<<<<<< HEAD
                             {{"You arrive at the pier on the island of Oakville. Nothing but silence fills the air.. you notice there are two directions."},{""}}
                     },
                     {//options
@@ -464,6 +824,23 @@ public class Questions {
                     {//answer types
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                             {{"Sanity"},{""}}
                     }
             },
@@ -471,6 +848,7 @@ public class Questions {
             //Scenario Level 22
             {
                     {//question
+<<<<<<< HEAD
                             {{"You walk through the small town and see no one. Was the radio signal wrong about the location? You hear a frequency signal coming from one of the buildings. "},{""}}
                     },
                     {//options
@@ -487,34 +865,71 @@ public class Questions {
                             {{"Hunger"},{""}},
                             {{"Hunger"},{""}},
                             {{"Hunger"},{""}}
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+                            {{"Sanity"},{""}}
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                     }
             },
 
             //Scenario Level 23
             {
                     {//question
+<<<<<<< HEAD
                             {{"The signal all of a sudden goes silent. You're now in the building, it's dark and hard to see anything. There are objects on the ground. "},{""}}
                     },
                     {//options
                             {{"Candle"},{""}},
                             {{"Stick"},{""}},
                             {{"Torch"},{""}}
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                     },
                     {//answer effects
                             {{"Neg"},{"20"}},
                             {{"Pos"},{"10"}},
+<<<<<<< HEAD
                             {{"Pos"},{"10"}},
                     },
                     {//answer types
                             {{"Water"},{""}},
                             {{"Water"},{""}},
                             {{"Watwr"},{""}}
+=======
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+                            {{"Sanity"},{""}}
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                     }
             },
 
             //Scenario Level 24
             {
                     {//question
+<<<<<<< HEAD
                             {{"You turn on the torch to see a person holding a radio, it must be the same person who contacted me earlier. He turns around and says \"You don't get it do you?\""},{""}}
                     },
                     {//options
@@ -530,6 +945,23 @@ public class Questions {
                     {//answer types
                             {{"Hunger"},{""}},
                             {{"Sanity"},{""}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                             {{"Sanity"},{""}}
                     }
             },
@@ -537,6 +969,7 @@ public class Questions {
             //Scenario Level 25
             {
                     {//question
+<<<<<<< HEAD
                             {{"He replies \"I made this happen, the spirits work for me\" All of a sudden hundreds of spirits surround the building"},{""}}
                     },
                     {//options
@@ -552,6 +985,23 @@ public class Questions {
                     {//answer types
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                             {{"Sanity"},{""}}
                     }
             },
@@ -559,6 +1009,7 @@ public class Questions {
             //Scenario Level 26
             {
                     {//question
+<<<<<<< HEAD
                             {{"\"Humans destroyed this world with their plastic waste, toxic carbon monoxide and more! That's why the apocalypse happened. Now I'm wiping out the race in order for the world to be at peace\" "},{""}}
                     },
                     {//options
@@ -570,6 +1021,19 @@ public class Questions {
                             {{"Neg"},{"15"}},
                             {{"Neg"},{"10"}},
                             {{"Pos"},{"5"}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                     },
                     {//answer types
                             {{"Hunger"},{""}},
@@ -581,6 +1045,7 @@ public class Questions {
             //Scenario Level 27
             {
                     {//question
+<<<<<<< HEAD
                             {{"\"I experimented with people after they have passed, I found a way to bring them back. I don't need your help\" Spirits enter the building and are about to touch me, there is nowhere to go or hide. "},{""}}
                     },
                     {//options
@@ -596,6 +1061,23 @@ public class Questions {
                     {//answer types
                             {{"Water"},{""}},
                             {{"Hunger"},{""}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                             {{"Sanity"},{""}}
                     }
             },
@@ -603,6 +1085,7 @@ public class Questions {
             //Scenario Level 28
             {
                     {//question
+<<<<<<< HEAD
                             {{"You closed your eyes and can feel the spirits touching you and around you. Nothing has happened, maybe I'm safe if i keep my eyes closed. This is my chance to escape. "},{""}}
                     },
                     {//options
@@ -618,6 +1101,23 @@ public class Questions {
                     {//answer types
                             {{"Water"},{""}},
                             {{"Hunger"},{""}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                             {{"Sanity"},{""}}
                     }
             },
@@ -625,6 +1125,7 @@ public class Questions {
             //Scenario Level 29
             {
                     {//question
+<<<<<<< HEAD
                             {{"I managed to get out with my eyes closed. I need remember which way I took to come here, it would be in reverse. "},{""}}
                     },
                     {//options
@@ -636,17 +1137,35 @@ public class Questions {
                             {{"Neg"},{"20"}},
                             {{"Neg"},{"10"}},
                             {{"Pos"},{"10"}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                     },
                     {//answer types
                             {{"Hunger"},{""}},
                             {{"Water"},{""}},
+<<<<<<< HEAD
                             {{"Hunger"},{""}}
+=======
+                            {{"Sanity"},{""}}
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                     }
             },
 
             //Scenario Level 30
             {
                     {//question
+<<<<<<< HEAD
                             {{"I opened my eyes for a quick second to look back and I see a power source that the spirits seem to gravitate towards. "},{""}}
                     },
                     {//options
@@ -663,12 +1182,31 @@ public class Questions {
                             {{"Water"},{""}},
                             {{"Hunger"},{""}},
                             {{"Water"},{""}}
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+                            {{"Sanity"},{""}}
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                     }
             },
 
             //Scenario Level 31
             {
                     {//question
+<<<<<<< HEAD
                             {{"I turn around with my eyes open and run towards th power source. The spirits have now spotted me, I need to decide fast and unplug one of the 3 cables."},{""}}
                     },
                     {//options
@@ -685,12 +1223,31 @@ public class Questions {
                             {{"Hunger"},{""}},
                             {{"Hunger"},{""}},
                             {{"Hunger"},{""}}
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+                            {{"Sanity"},{""}}
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                     }
             },
 
             //Scenario Level 32
             {
                     {//question
+<<<<<<< HEAD
                             {{"It was no use! Try another cable before the spirits reach you! "},{""}}
                     },
                     {//options
@@ -707,12 +1264,31 @@ public class Questions {
                             {{"Water"},{""}},
                             {{"Water"},{""}},
                             {{"Water"},{""}}
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+                            {{"Sanity"},{""}}
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                     }
             },
 
             //Scenario Level 33
             {
                     {//question
+<<<<<<< HEAD
                             {{"That didn't seem to work either. The spirits are about to touch you, you need to think fast."},{""}}
                     },
                     {//options
@@ -728,6 +1304,23 @@ public class Questions {
                     {//answer types
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                             {{"Sanity"},{""}}
                     }
             },
@@ -735,6 +1328,7 @@ public class Questions {
             //Scenario Level 34
             {
                     {//question
+<<<<<<< HEAD
                             {{"You unplug the last cable and you can still hear the power source is on. It didn't work, you then run with your eyes closed to escape from the spirits. "},{""}}
                     },
                     {//options
@@ -750,6 +1344,23 @@ public class Questions {
                     {//answer types
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                             {{"Sanity"},{""}}
                     }
             },
@@ -757,6 +1368,7 @@ public class Questions {
             //Scenario Level 35
             {
                     {//question
+<<<<<<< HEAD
                             {{"You don't know where you're going. You can sense the sun is going down and it will be dark again soon. You open your eyes to see places to hide. "},{""}}
                     },
                     {//options
@@ -772,6 +1384,23 @@ public class Questions {
                     {//answer types
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                             {{"Sanity"},{""}}
                     }
             },
@@ -779,6 +1408,7 @@ public class Questions {
             //Scenario Level 36
             {
                     {//question
+<<<<<<< HEAD
                             {{"You jump inside a barrel and hide. Luckily you can put the lid over it as there are holes for breathing on the sides of the barrel. "},{""}}
                     },
                     {//options
@@ -794,6 +1424,23 @@ public class Questions {
                     {//answer types
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                             {{"Sanity"},{""}}
                     }
             },
@@ -801,6 +1448,7 @@ public class Questions {
             //Scenario Level 37
             {
                     {//question
+<<<<<<< HEAD
                             {{"You wake up to the sunlight in your face coming through the small holes in the barrel. You go to push off the lid but cannot. "},{""}}
                     },
                     {//options
@@ -812,17 +1460,35 @@ public class Questions {
                             {{"Neg"},{"5"}},
                             {{"Neg"},{"5"}},
                             {{"Pos"},{"10"}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                     },
                     {//answer types
                             {{"Hunger"},{""}},
                             {{"Water"},{""}},
+<<<<<<< HEAD
                             {{"Water"},{""}}
+=======
+                            {{"Sanity"},{""}}
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                     }
             },
 
             //Scenario Level 38
             {
                     {//question
+<<<<<<< HEAD
                             {{"You manage to push off the lid, the second time. You hop out of the barrel and see the person with the radio staring at you. "},{""}}
                     },
                     {//options
@@ -838,6 +1504,23 @@ public class Questions {
                     {//answer types
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                             {{"Sanity"},{""}}
                     }
             },
@@ -845,6 +1528,7 @@ public class Questions {
             //Scenario Level 39
             {
                     {//question
+<<<<<<< HEAD
                             {{"He says \"I'm here to watch you die\" You cannot escape this place, this is home of where it all started. "},{""}}
                     },
                     {//options
@@ -861,12 +1545,31 @@ public class Questions {
                             {{"Water"},{""}},
                             {{"Water"},{""}},
                             {{"Water"},{""}}
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+                            {{"Sanity"},{""}}
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                     }
             },
 
             //Scenario Level 40
             {
                     {//question
+<<<<<<< HEAD
                             {{"You lose the fight, he is on top of you holding you down. He says \"You have a strong soul, they really want to take yours\" "},{""}}
                     },
                     {//options
@@ -883,12 +1586,31 @@ public class Questions {
                             {{"Hunger"},{""}},
                             {{"Hunger"},{""}},
                             {{"Hunger"},{""}}
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+                            {{"Sanity"},{""}}
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                     }
             },
 
             //Scenario Level 41
             {
                     {//question
+<<<<<<< HEAD
                             {{"You manage to hit him over the head with the rock. You then run for your life to try and leave the island but when you get close to the pier you see spirits have created a border that cannot be passed."},{""}}
                     },
                     {//options
@@ -904,6 +1626,23 @@ public class Questions {
                     {//answer types
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                             {{"Sanity"},{""}}
                     }
             },
@@ -911,6 +1650,7 @@ public class Questions {
             //Scenario Level 42
             {
                     {//question
+<<<<<<< HEAD
                             {{"You go back and hide in one of the buildings in the small town. It's only a matter of time before they find you. "},{""}}
                     },
                     {//options
@@ -922,6 +1662,19 @@ public class Questions {
                             {{"Neg"},{"10"}},
                             {{"Neg"},{"10"}},
                             {{"Pos"},{"5"}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                     },
                     {//answer types
                             {{"Hunger"},{""}},
@@ -933,6 +1686,7 @@ public class Questions {
             //Scenario Level 43
             {
                     {//question
+<<<<<<< HEAD
                             {{"You hear the door open into the building, it's like they can sense your presence to know where you are. You know your chance of survival has dropped drastically. "},{""}}
                     },
                     {//options
@@ -948,6 +1702,23 @@ public class Questions {
                     {//answer types
                             {{"Hunger"},{""}},
                             {{"Sanity"},{""}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                             {{"Sanity"},{""}}
                     }
             },
@@ -955,6 +1726,7 @@ public class Questions {
             //Scenario Level 44
             {
                     {//question
+<<<<<<< HEAD
                             {{"You see a desk in a room of the building, it may have some useful resources to survive. You have some time to find anything to help you"},{""}}
                     },
                     {//options
@@ -966,6 +1738,19 @@ public class Questions {
                             {{"Neg"},{"20"}},
                             {{"Neg"},{"10"}},
                             {{"Pos"},{"10"}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                     },
                     {//answer types
                             {{"Hunger"},{""}},
@@ -977,6 +1762,7 @@ public class Questions {
             //Scenario Level 45
             {
                     {//question
+<<<<<<< HEAD
                             {{"You see some bricks in the corner of one of the rooms. This may be helpful in protecting yourself from the person coming in soon."},{""}}
                     },
                     {//options
@@ -992,6 +1778,23 @@ public class Questions {
                     {//answer types
                             {{"Water"},{""}},
                             {{"Hunger"},{""}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                             {{"Sanity"},{""}}
                     }
             },
@@ -999,6 +1802,7 @@ public class Questions {
             //Scenario Level 46
             {
                     {//question
+<<<<<<< HEAD
                             {{"You aren't sure whether to pick up a brick so you see glass shattered on the ground. Should you pick it up instead and use it as protection? "},{""}}
                     },
                     {//options
@@ -1010,6 +1814,19 @@ public class Questions {
                             {{"Neg"},{"10"}},
                             {{"Neg"},{"10"}},
                             {{"Neg"},{"10"}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                     },
                     {//answer types
                             {{"Hunger"},{""}},
@@ -1021,6 +1838,7 @@ public class Questions {
             //Scenario Level 47
             {
                     {//question
+<<<<<<< HEAD
                             {{"You hear the footsteps coming closer, your heart is racing and you are too anxious to decide. "},{""}}
                     },
                     {//options
@@ -1036,6 +1854,23 @@ public class Questions {
                     {//answer types
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                             {{"Sanity"},{""}}
                     }
             },
@@ -1043,6 +1878,7 @@ public class Questions {
             //Scenario Level 48
             {
                     {//question
+<<<<<<< HEAD
                             {{"The person comes in the room, they see you standing up feeling unsteady. You aren't feeling too good and don't know what to do next. "},{""}}
                     },
                     {//options
@@ -1058,6 +1894,23 @@ public class Questions {
                     {//answer types
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                             {{"Sanity"},{""}}
                     }
             },
@@ -1065,6 +1918,7 @@ public class Questions {
             //Scenario Level 49
             {
                     {//question
+<<<<<<< HEAD
                             {{"You start to feel dizzy, your legs begin to wobble and you could collapse at any moment. The stress and lack of energy is coming down on you."},{""}}
                     },
                     {//options
@@ -1102,10 +1956,28 @@ public class Questions {
                     {//answer types
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
+=======
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                             {{"Sanity"},{""}}
                     }
             },
 
+<<<<<<< HEAD
             //Scenario Level 51
             {
                     {//question
@@ -1124,6 +1996,26 @@ public class Questions {
                     {//answer types
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
+=======
+            //Scenario Level 50
+            {
+                    {//question
+                            {{"You take your backpack that contains your belongings, you find your phone and view messages in an attempt to remember what happened last. You see a message from a friend. They have surrounded me, 37.8136° S, 144.9631° E"},{""}}
+                    },
+                    {//options
+                            {{"Find boat"},{""}},
+                            {{"Find bike"},{""}},
+                            {{"Find a vehicle"},{""}}
+                    },
+                    {//answer effects
+                            {{"Neg"},{"20"}},
+                            {{"Pos"},{"10"}},
+                            {{"Pos"},{"20"}},
+                    },
+                    {//answer types
+                            {{"Hunger"},{""}},
+                            {{"Water"},{""}},
+>>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
                             {{"Sanity"},{""}}
                     }
             },
