@@ -193,11 +193,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateQuestion() {
-<<<<<<< HEAD
         if (mQuestionNumber < 51) {
-=======
-        if (mQuestionNumber < 50) {
->>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
             question.setText(mQuestions.getQuestionData( mQuestionNumber,0,  0, 0, 0));
 
 
@@ -228,10 +224,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-<<<<<<< HEAD
     //Save story, percentage levels on rotation
-=======
->>>>>>> fb47c16df17a4d2be7a7f1c42581ad03dfdd6914
     @Override
     protected void onSaveInstanceState(Bundle outState) {
 
