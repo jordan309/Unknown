@@ -280,3 +280,17 @@ Still working on features:
 - Log page of saves
 - Button loads and saves data
 - Sound effects for each part of the story
+
+
+# Week 7
+
+# 20/04/19 Saturday [Jordan]
+
+Attempted to setup countdown timer for each part of the story. Haven't been able to get it working yet. 
+
+Still working on features: 
+- Create countdown timer
+- Load / save game 
+- Log page of saves
+- Button loads and saves data
+- Sound effects for each part of the story
