@@ -1,5 +1,6 @@
 package com.example.jordan307.unknown;
 
+import android.content.Intent;
 import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -119,6 +120,10 @@ public class MainActivity extends AppCompatActivity {
                 dResults.setText(mA1RDialog);
                 updateScores();
                 updateQuestion();
+                winCheck();
+                FoodLoseCheck();
+                SanityLoseCheck();
+                WaterLoseCheck();
             }
         });
 
@@ -153,6 +158,11 @@ public class MainActivity extends AppCompatActivity {
                 dResults.setText(mA2RDialog);
                 updateScores();
                 updateQuestion();
+                winCheck();
+                FoodLoseCheck();
+                SanityLoseCheck();
+                WaterLoseCheck();
+
             }
 
         });
@@ -187,6 +197,10 @@ public class MainActivity extends AppCompatActivity {
                 dResults.setText(mA3RDialog);
                 updateScores();
                 updateQuestion();
+                winCheck();
+                FoodLoseCheck();
+                SanityLoseCheck();
+                WaterLoseCheck();
 
             }
         });
@@ -197,6 +211,34 @@ public class MainActivity extends AppCompatActivity {
         foodScore.setText("Food " + foodValue + "%");
         waterScore.setText("Water " + waterValue + "%");
         sanityScore.setText("Sanity " + sanityValue + "%");
+    }
+
+    private void winCheck(){
+        if (mQuestionNumber >= 51){
+            Intent intent = new Intent(getApplicationContext(), GameWin.class);
+            startActivity(intent);
+        }
+    }
+
+    private void FoodLoseCheck(){
+        if (foodValue <= 0){
+            Intent intent = new Intent(getApplicationContext(), GameLossFood.class);
+            startActivity(intent);
+        }
+    }
+
+    private void SanityLoseCheck(){
+        if (sanityValue <= 0){
+            Intent intent = new Intent(getApplicationContext(), GameLossSanity.class);
+            startActivity(intent);
+        }
+    }
+
+    private void WaterLoseCheck(){
+        if (waterValue <= 0){
+            Intent intent = new Intent(getApplicationContext(), GameLossWater.class);
+            startActivity(intent);
+        }
     }
 
     private void updateQuestion() {

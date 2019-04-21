@@ -5,6 +5,6 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
-public class GameWin extends AppCompatActivity {
+public class GameLossFood extends AppCompatActivity {
 
 }
