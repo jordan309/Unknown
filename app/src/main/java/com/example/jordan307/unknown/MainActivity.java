@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     //Defining the buttons
     Button answer1, answer2, answer3;
 
-    TextView foodScore, waterScore, sanityScore, question;
+    TextView foodScore, waterScore, sanityScore, question, dResults;
 
     private Questions mQuestions = new Questions();
 
@@ -48,6 +48,9 @@ public class MainActivity extends AppCompatActivity {
     private String mA1Type;
     private String mA2Type;
     private String mA3Type;
+    private String mA1RDialog;
+    private String mA2RDialog;
+    private String mA3RDialog;
 
     //Question number variable
     private int mQuestionNumber = 0;
@@ -77,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
         waterScore = findViewById(R.id.wscore);
         sanityScore = findViewById(R.id.sscore);
         question = findViewById(R.id.question);
+        dResults = findViewById(R.id.dresults);
 
         //Assigning text to the elements on the page based on the current values of the resources
 
@@ -112,6 +116,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                 }
+                dResults.setText(mA1RDialog);
                 updateScores();
                 updateQuestion();
             }
@@ -145,6 +150,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                 }
+                dResults.setText(mA2RDialog);
                 updateScores();
                 updateQuestion();
             }
@@ -178,6 +184,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                 }
+                dResults.setText(mA3RDialog);
                 updateScores();
                 updateQuestion();
 
@@ -210,6 +217,10 @@ public class MainActivity extends AppCompatActivity {
             mA1Type = mQuestions.getQuestionData(mQuestionNumber, 3, 0, 0, 0);
             mA2Type = mQuestions.getQuestionData(mQuestionNumber, 3, 1, 0, 0);
             mA3Type = mQuestions.getQuestionData(mQuestionNumber, 3, 2, 0, 0);
+            mA1RDialog = mQuestions.getQuestionData(mQuestionNumber, 4, 0, 0, 0);
+            mA2RDialog = mQuestions.getQuestionData(mQuestionNumber, 4, 1, 0, 0);
+            mA3RDialog = mQuestions.getQuestionData(mQuestionNumber, 4, 2, 0, 0);
+
 
             mQuestionNumber++;
 
