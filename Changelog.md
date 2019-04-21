@@ -295,7 +295,7 @@ Still working on features:
 - Button loads and saves data
 - Sound effects for each part of the story
 
-# Week 6
+# Week 7
 ## 20/04/19 - 21/04/19 - Saturday + Sunday [Daniel]
 (This commit is made for 2 days as I had no Internet Access on Saturday)
 
@@ -311,5 +311,16 @@ Still working on features:
 - Added new text view to main activity layout called dresults that will store the dialog results of each players decision
 - Added new variable to Main activity to store the array values for dialog called dResults
 - Added additional functionaliy to each of the answer button functions that changes the response dialog based on what point of the story it is and which answer was clicked.
+
+# Week 7
+## 21/04/19 Sunday Part 2 [Daniel]
+
+- Split the game loss activites into 3 different lose states to allow for better player feedback and unique art styles for each way of losing, these activites are;
+  - GameLossFood
+  - GameLossWater
+  - GameLossSanity
+- Added a function that will determine if a player has won the game or not based on the question count, this function is called winCheck
+- Added winCheck to each of the on click listeners for player answers
+- Added story results up to level 12
 
 
