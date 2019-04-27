@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <Button
         android:id="@+id/answer1"
         android:layout_width="119dp"
@@ -44,7 +43,7 @@
         app:layout_constraintVertical_bias="0.986" />
 
     <Button
-        android:id="@+id/charPow"
+        android:id="@+id/load"
         android:layout_width="119dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
@@ -53,7 +52,8 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/btn_gradient_style"
         android:gravity="center"
-        android:text="Button"
+        android:onClick="load"
+        android:text="Load"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.028"
@@ -136,7 +136,7 @@
     <TextView
         android:id="@+id/question"
         android:layout_width="350dp"
-        android:layout_height="425dp"
+        android:layout_height="364dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -149,7 +149,7 @@
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.303" />
+        app:layout_constraintVertical_bias="0.421" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -201,7 +201,7 @@
         app:srcCompat="@drawable/food" />
 
     <Button
-        android:id="@+id/savenow"
+        android:id="@+id/saveGame"
         android:layout_width="119dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
@@ -209,6 +209,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="Save"
+        android:onClick="save"
         android:background="@drawable/btn_gradient_style"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

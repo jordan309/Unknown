@@ -2,14 +2,24 @@ package com.example.jordan307.unknown;
 
 import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.CountDownTimer;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class MainActivity extends AppCompatActivity {
+
+    private static final String FILE_NAME = "saved.txt";
 
     private TextView mTextViewCount;
     private int mCount;
@@ -25,6 +35,63 @@ public class MainActivity extends AppCompatActivity {
         sanityScore.setText("Sanity " + sanityValue + "%");
     }
 
+    public void save(View v) {
+        String text = question.getText().toString();
+        FileOutputStream fos = null;
+
+        try {
+            fos = openFileOutput(FILE_NAME, MODE_PRIVATE);
+            fos.write(text.getBytes());
+            Toast.makeText(this, "Save to " + getFilesDir() + "/" + FILE_NAME, Toast.LENGTH_LONG).show();
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (fos != null) {
+                try {
+                    fos.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    public void load(View v) {
+        FileInputStream fis = null;
+
+        try {
+            fis = openFileInput(FILE_NAME);
+            InputStreamReader isr = new InputStreamReader(fis);
+            BufferedReader br = new BufferedReader(isr);
+            StringBuilder sb = new StringBuilder();
+            String text;
+
+            while ((text = br.readLine()) != null) {
+                sb.append(text);
+            }
+
+            question.setText(sb.toString());
+
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (fis != null) {
+                try {
+                    fis.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+
     //Defining the buttons
     Button answer1, answer2, answer3;
 
@@ -37,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
     private int foodValue = 100;
     private int waterValue = 100;
     private int sanityValue = 100;
+
 
     //Question Variables
     private String mA1AnswerEffectValues;
@@ -79,8 +147,6 @@ public class MainActivity extends AppCompatActivity {
         question = findViewById(R.id.question);
 
         //Assigning text to the elements on the page based on the current values of the resources
-
-
         updateQuestion();
         initialScores();
 
@@ -185,6 +251,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+
+
+
     }
     private void updateScores() {
         foodScore.setText("Food " + foodValue + "%");
@@ -195,8 +264,6 @@ public class MainActivity extends AppCompatActivity {
     private void updateQuestion() {
         if (mQuestionNumber < 51) {
             question.setText(mQuestions.getQuestionData( mQuestionNumber,0,  0, 0, 0));
-
-
 
             answer1.setText(mQuestions.getQuestionData(mQuestionNumber, 1, 0, 0, 0));
             answer2.setText(mQuestions.getQuestionData(mQuestionNumber, 1, 1, 0, 0));
@@ -218,6 +285,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
     private void decrement() {
         mCount++;
         mTextViewCount.setText(String.valueOf(mCount));
@@ -236,6 +304,8 @@ public class MainActivity extends AppCompatActivity {
         outState.putString("water",waterScore.getText().toString());
         outState.putString("food",foodScore.getText().toString());
         super.onSaveInstanceState(outState);
+
+
     }
 
     //Restore story, percentage levels on rotation
