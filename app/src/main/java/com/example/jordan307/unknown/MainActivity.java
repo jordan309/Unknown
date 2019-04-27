@@ -1,5 +1,6 @@
 package com.example.jordan307.unknown;
 
+import android.content.Intent;
 import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.CountDownTimer;
@@ -95,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
     //Defining the buttons
     Button answer1, answer2, answer3;
 
-    TextView foodScore, waterScore, sanityScore, question;
+    TextView foodScore, waterScore, sanityScore, question, dResults;
 
     private Questions mQuestions = new Questions();
 
@@ -116,6 +117,9 @@ public class MainActivity extends AppCompatActivity {
     private String mA1Type;
     private String mA2Type;
     private String mA3Type;
+    private String mA1RDialog;
+    private String mA2RDialog;
+    private String mA3RDialog;
 
     //Question number variable
     private int mQuestionNumber = 0;
@@ -145,6 +149,7 @@ public class MainActivity extends AppCompatActivity {
         waterScore = findViewById(R.id.wscore);
         sanityScore = findViewById(R.id.sscore);
         question = findViewById(R.id.question);
+        dResults = findViewById(R.id.dresults);
 
         //Assigning text to the elements on the page based on the current values of the resources
         updateQuestion();
@@ -178,8 +183,13 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                 }
+                dResults.setText(mA1RDialog);
                 updateScores();
                 updateQuestion();
+                winCheck();
+                FoodLoseCheck();
+                SanityLoseCheck();
+                WaterLoseCheck();
             }
         });
 
@@ -211,8 +221,14 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                 }
+                dResults.setText(mA2RDialog);
                 updateScores();
                 updateQuestion();
+                winCheck();
+                FoodLoseCheck();
+                SanityLoseCheck();
+                WaterLoseCheck();
+
             }
 
         });
@@ -244,8 +260,13 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                 }
+                dResults.setText(mA3RDialog);
                 updateScores();
                 updateQuestion();
+                winCheck();
+                FoodLoseCheck();
+                SanityLoseCheck();
+                WaterLoseCheck();
 
             }
         });
@@ -259,6 +280,34 @@ public class MainActivity extends AppCompatActivity {
         foodScore.setText("Food " + foodValue + "%");
         waterScore.setText("Water " + waterValue + "%");
         sanityScore.setText("Sanity " + sanityValue + "%");
+    }
+
+    private void winCheck(){
+        if (mQuestionNumber >= 51){
+            Intent intent = new Intent(getApplicationContext(), GameWin.class);
+            startActivity(intent);
+        }
+    }
+
+    private void FoodLoseCheck(){
+        if (foodValue <= 0){
+            Intent intent = new Intent(getApplicationContext(), GameLossFood.class);
+            startActivity(intent);
+        }
+    }
+
+    private void SanityLoseCheck(){
+        if (sanityValue <= 0){
+            Intent intent = new Intent(getApplicationContext(), GameLossSanity.class);
+            startActivity(intent);
+        }
+    }
+
+    private void WaterLoseCheck(){
+        if (waterValue <= 0){
+            Intent intent = new Intent(getApplicationContext(), GameLossWater.class);
+            startActivity(intent);
+        }
     }
 
     private void updateQuestion() {
@@ -277,6 +326,10 @@ public class MainActivity extends AppCompatActivity {
             mA1Type = mQuestions.getQuestionData(mQuestionNumber, 3, 0, 0, 0);
             mA2Type = mQuestions.getQuestionData(mQuestionNumber, 3, 1, 0, 0);
             mA3Type = mQuestions.getQuestionData(mQuestionNumber, 3, 2, 0, 0);
+            mA1RDialog = mQuestions.getQuestionData(mQuestionNumber, 4, 0, 0, 0);
+            mA2RDialog = mQuestions.getQuestionData(mQuestionNumber, 4, 1, 0, 0);
+            mA3RDialog = mQuestions.getQuestionData(mQuestionNumber, 4, 2, 0, 0);
+
 
             mQuestionNumber++;
 

@@ -25,6 +25,11 @@ public class Questions {
                             {{"Hunger"},{""}},
                             {{"Hunger"},{""}},
                             {{"Hunger"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -48,6 +53,11 @@ public class Questions {
                             {{"Water"},{""}},
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"You can see clearly and don't see anything."},{""}},
+                            {{"As you approach you realize what you are seeing is not of this world. It screams and passes right through you before vanishing"},{""}},
+                            {{"It appears to be a person but it Banishes before you are sure, you feel a chill down your spine"},{""}}
                     }
             },
 
@@ -70,6 +80,11 @@ public class Questions {
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"You come across a dead body in the forest with no wounds and white eyes. You hurry back to camp where you remember your backpack might be"},{""}},
+                            {{"You don't find anything but feel as though something is watching you constantly, you hurry back to camp where you remember seeing your backpack."},{""}},
+                            {{"You find your backpack. A feeling of releif washes over you."},{""}}
                     }
             },
 
@@ -92,6 +107,11 @@ public class Questions {
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"We're not near water! We will find a vehicle"},{""}},
+                            {{"It's going to take some time to reach that destination"},{""}},
+                            {{"The car you found has an engine running at half capacity"},{""}}
                     }
             },
 
@@ -114,6 +134,11 @@ public class Questions {
                             {{"Hunger"},{""}},
                             {{"Water"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"That was no use! They're transparant and can't be killed. Instead you pick Trevor up and drive away."},{""}},
+                            {{"It's worked but Trevor can't move much. You quickly turn back and carry him to the car."},{""}},
+                            {{"You drive straight to Trevor, lift him up and drive off in the car"},{""}}
                     }
             },
 
@@ -136,6 +161,11 @@ public class Questions {
                             {{"Water"},{""}},
                             {{"Sanity"},{""}},
                             {{"Water"},{""}}
+                    },
+                    {//result dialog
+                            {{"The water pours out everywhere, you have lost most of your supply"},{""}},
+                            {{"Your friend is still in pain"},{""}},
+                            {{"You helped your friend reduce the pain"},{""}}
                     }
             },
 
@@ -158,6 +188,11 @@ public class Questions {
                             {{"Sanity"},{""}},
                             {{"Hunger"},{""}},
                             {{"Hunger"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's too late for that, your friend is long gone. Head to the river. "},{""}},
+                            {{"Some of the spirits might have heard you but you are unsure"},{""}},
+                            {{"You drink the fresh running water. It gives you time to think about what just happened"},{""}}
                     }
             },
 
@@ -180,6 +215,11 @@ public class Questions {
                             {{"Sanity"},{""}},
                             {{"Hunger"},{""}},
                             {{"Hunger"},{""}}
+                    },
+                    {//result dialog
+                            {{"You need supplies, without this you would not survive. You head to the shopping centre"},{""}},
+                            {{"You need supplies, without this you would not survive. You head to the shopping centre"},{""}},
+                            {{"You find a backpack, a sleeping bag and tin canned food. "},{""}}
                     }
             },
 
@@ -202,6 +242,11 @@ public class Questions {
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"There is no time! Spirits can sense your presence. You make it to the house in a panic"},{""}},
+                            {{"You took a bit longer than you should have but you made it"},{""}},
+                            {{"Getting their at night as quick as possible was a good idea"},{""}}
                     }
             },
 
@@ -224,6 +269,11 @@ public class Questions {
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"You are really cold and find it difficult to sleep."},{""}},
+                            {{"You are a bit cold but it will have to do for now"},{""}},
+                            {{"You are nice and warm, you feel comfortable in your sleeping bag and fall asleep"},{""}}
                     }
             },
 
@@ -238,14 +288,19 @@ public class Questions {
                             {{"Salt all of the entrances of the building"},{""}}
                     },
                     {//answer effects
-                            {{"Neg"},{"20"}},
+                            {{"Neg"},{"100"}},
                             {{"Neg"},{"10"}},
                             {{"Pos"},{"5"}},
                     },
                     {//answer types
-                            {{"Hunger"},{""}},
+                            {{"Sanity"},{""}},
                             {{"Water"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"The Incence candles empower the spirits they enter the house and drain the life from you"},{""}},
+                            {{"You can still hear the spirits the ash does not seem to have worked"},{""}},
+                            {{"The spirits grow quiet you have warded them off for now it seems"},{""}}
                     }
             },
 
@@ -268,6 +323,11 @@ public class Questions {
                             {{"Sanity"},{""}},
                             {{"Water"},{""}},
                             {{"Hunger"},{""}}
+                    },
+                    {//result dialog
+                            {{"You can hear a faint voice saying 10,10 Oakville but the spirits hear the radio signals and track your position down and start screaming at you through the radio"},{""}},
+                            {{"You get a fix on a radio channel and hear a faint voice muttering 10, 10 oakville."},{""}},
+                            {{"You find a note left by another survivor 10, 10 oakville is safe get there as fast as you can!"},{""}}
                     }
             },
 
@@ -290,6 +350,11 @@ public class Questions {
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -312,6 +377,11 @@ public class Questions {
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -334,6 +404,11 @@ public class Questions {
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -356,6 +431,11 @@ public class Questions {
                             {{"Hunger"},{""}},
                             {{"Water"},{""}},
                             {{"Hunger"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -378,6 +458,11 @@ public class Questions {
                             {{"Hunger"},{""}},
                             {{"Water"},{""}},
                             {{"Water"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
             //Scenario Level 18
@@ -399,6 +484,11 @@ public class Questions {
                             {{"Hunger"},{""}},
                             {{"Water"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -421,6 +511,11 @@ public class Questions {
                             {{"Hunger"},{""}},
                             {{"Water"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -443,6 +538,11 @@ public class Questions {
                             {{"Hunger"},{""}},
                             {{"Water"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -465,6 +565,11 @@ public class Questions {
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -487,6 +592,11 @@ public class Questions {
                             {{"Hunger"},{""}},
                             {{"Hunger"},{""}},
                             {{"Hunger"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -509,6 +619,11 @@ public class Questions {
                             {{"Water"},{""}},
                             {{"Water"},{""}},
                             {{"Watwr"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -531,6 +646,11 @@ public class Questions {
                             {{"Hunger"},{""}},
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -553,6 +673,11 @@ public class Questions {
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -575,6 +700,11 @@ public class Questions {
                             {{"Hunger"},{""}},
                             {{"Water"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -597,6 +727,11 @@ public class Questions {
                             {{"Water"},{""}},
                             {{"Hunger"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -619,6 +754,11 @@ public class Questions {
                             {{"Water"},{""}},
                             {{"Hunger"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -641,6 +781,11 @@ public class Questions {
                             {{"Hunger"},{""}},
                             {{"Water"},{""}},
                             {{"Hunger"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -663,6 +808,11 @@ public class Questions {
                             {{"Water"},{""}},
                             {{"Hunger"},{""}},
                             {{"Water"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -685,6 +835,11 @@ public class Questions {
                             {{"Hunger"},{""}},
                             {{"Hunger"},{""}},
                             {{"Hunger"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -707,6 +862,11 @@ public class Questions {
                             {{"Water"},{""}},
                             {{"Water"},{""}},
                             {{"Water"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -729,6 +889,11 @@ public class Questions {
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -751,6 +916,11 @@ public class Questions {
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -773,6 +943,11 @@ public class Questions {
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -795,6 +970,11 @@ public class Questions {
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -817,6 +997,11 @@ public class Questions {
                             {{"Hunger"},{""}},
                             {{"Water"},{""}},
                             {{"Water"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -839,6 +1024,11 @@ public class Questions {
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -861,6 +1051,11 @@ public class Questions {
                             {{"Water"},{""}},
                             {{"Water"},{""}},
                             {{"Water"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -883,6 +1078,11 @@ public class Questions {
                             {{"Hunger"},{""}},
                             {{"Hunger"},{""}},
                             {{"Hunger"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -905,6 +1105,11 @@ public class Questions {
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -927,6 +1132,11 @@ public class Questions {
                             {{"Hunger"},{""}},
                             {{"Water"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -949,6 +1159,11 @@ public class Questions {
                             {{"Hunger"},{""}},
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -971,6 +1186,11 @@ public class Questions {
                             {{"Hunger"},{""}},
                             {{"Water"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -993,6 +1213,11 @@ public class Questions {
                             {{"Water"},{""}},
                             {{"Hunger"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -1015,6 +1240,11 @@ public class Questions {
                             {{"Hunger"},{""}},
                             {{"Water"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -1037,6 +1267,11 @@ public class Questions {
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -1059,6 +1294,11 @@ public class Questions {
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -1081,6 +1321,11 @@ public class Questions {
                             {{"Water"},{""}},
                             {{"Water"},{""}},
                             {{"Water"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -1103,6 +1348,11 @@ public class Questions {
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 
@@ -1125,6 +1375,11 @@ public class Questions {
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}},
                             {{"Sanity"},{""}}
+                    },
+                    {//result dialog
+                            {{"It's rock solid, but anything will do, you hope this mold is not poisonous."},{""}},
+                            {{"You eat the meat and feel violently ill, it was rotten, you throw up."},{""}},
+                            {{"it's a little old but tastes good you eat the whole thing core and all!"},{""}}
                     }
             },
 

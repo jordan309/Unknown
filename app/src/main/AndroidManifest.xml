@@ -16,6 +16,10 @@
         <activity android:name=".SettingsActivity" />
         <activity android:name=".MenuActivity"> </activity>
         <activity android:name=".IntroActivity" />
+        <activity android:name=".GameWin" />
+        <activity android:name=".GameLossFood" />
+        <activity android:name=".GameLossSanity" />
+        <activity android:name=".GameLossWater" />
         <activity android:name=".MainActivity"> </activity>
         <activity android:name=".Splashscreen">
             <intent-filter>

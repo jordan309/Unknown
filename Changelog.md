@@ -262,3 +262,65 @@ Type dictates which resource the above to values are effecting between hunger, w
 ## 14/04/19 - Sunday [Daniel]
 
 - Added all 50 scenarios to the multidimensional array ready for the rest of the story and data to be input into
+
+
+# Week 6
+
+# 14/04/19 Sunday [Jordan]
+
+Features added:
+- All positive and negative effects to each answer
+- Finished complete story
+- Added comments to functions/methods
+
+
+Still working on features: 
+- Create countdown timer
+- Load / save game 
+- Log page of saves
+- Button loads and saves data
+- Sound effects for each part of the story
+
+
+# Week 7
+
+# 20/04/19 Saturday [Jordan]
+
+Attempted to setup countdown timer for each part of the story. Haven't been able to get it working yet. 
+
+Still working on features: 
+- Create countdown timer
+- Load / save game 
+- Log page of saves
+- Button loads and saves data
+- Sound effects for each part of the story
+
+# Week 7
+## 20/04/19 - 21/04/19 - Saturday + Sunday [Daniel]
+(This commit is made for 2 days as I had no Internet Access on Saturday)
+
+- Added a new GameOver activity that will load when any of the players resources reaches 0 resulting in a game loss
+- Added a new GameWin actvity that will load when the player completes all 50 stages and wins the game
+- Added 3 new entries into the multidimensional array called result dialog which contains the responses to the choice players make
+- Added new set of Question Variable called mRdialog used for storing the dialog of the current question from the array there are 3 of them.
+  - mA1RDialog
+  - mA2RDialog
+  - mA3RDialog
+- Added mA1RDialog, mA2RDialog and mA3RDialog to the update question function and ensured that the array is being accessed correctly
+- Decreased text size of question in the main activity to make room for Result Dialog
+- Added new text view to main activity layout called dresults that will store the dialog results of each players decision
+- Added new variable to Main activity to store the array values for dialog called dResults
+- Added additional functionaliy to each of the answer button functions that changes the response dialog based on what point of the story it is and which answer was clicked.
+
+# Week 7
+## 21/04/19 Sunday Part 2 [Daniel]
+
+- Split the game loss activites into 3 different lose states to allow for better player feedback and unique art styles for each way of losing, these activites are;
+  - GameLossFood
+  - GameLossWater
+  - GameLossSanity
+- Added a function that will determine if a player has won the game or not based on the question count, this function is called winCheck
+- Added winCheck to each of the on click listeners for player answers
+- Added story results up to level 12
+
+
