@@ -324,3 +324,14 @@ Still working on features:
 - Added story results up to level 12
 
 
+# Week 8
+# 27/04/19 Saturday [Jordan]
+
+Save and load buttons work, only part of the story saves for now. Still trying to figure out how to save the percentages and button choices on load. 
+
+Still working on features: 
+- Create countdown timer
+- Log page of saves
+- Sound effects for each part of the story
+
+
