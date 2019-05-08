@@ -346,3 +346,9 @@ Still working on features:
 - Sound on each part of the story, only place once no loop 
 - Art for game over and win screens 
 - App meets google play store guidelines
+
+# 8/05/19 Wednesday [Henry]
+- Good progress. Glad to see it's getting closer. Final stretch now. 
+- Make sure you go over everything in the Grading Criteria super carefully, to ensure you meet each point.
+
+
