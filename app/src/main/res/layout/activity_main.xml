@@ -136,11 +136,7 @@
     <TextView
         android:id="@+id/question"
         android:layout_width="350dp"
-<<<<<<< HEAD
         android:layout_height="364dp"
-=======
-        android:layout_height="206dp"
->>>>>>> da7d3c692672a5d2f1649bae50d78f48c68c18ca
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -153,10 +149,8 @@
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-<<<<<<< HEAD
         app:layout_constraintVertical_bias="0.421" />
-=======
-        app:layout_constraintVertical_bias="0.624" />
+
 
     <TextView
         android:id="@+id/dresults"
@@ -175,7 +169,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.184" />
->>>>>>> da7d3c692672a5d2f1649bae50d78f48c68c18ca
+
 
     <ImageView
         android:id="@+id/imageView3"
@@ -234,13 +228,9 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-<<<<<<< HEAD
         android:text="Save"
         android:onClick="save"
-=======
->>>>>>> da7d3c692672a5d2f1649bae50d78f48c68c18ca
         android:background="@drawable/btn_gradient_style"
-        android:text="Save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.971"

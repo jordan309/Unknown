@@ -25,26 +25,25 @@ public class Splashscreen extends AppCompatActivity {
         setContentView(R.layout.activity_splashscreen);
 
         iv = (ImageView) findViewById(R.id.iv);
-        Animation myanim = AnimationUtils.loadAnimation(this,R.anim.splash_transition);
+        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.splash_transition);
         iv.startAnimation(myanim);
 
-        final Intent i = new Intent(this,MenuActivity.class);
+        final Intent i = new Intent(this, MenuActivity.class);
 
-        Thread timer = new Thread(){
-            public void run () {
+        Thread timer = new Thread() {
+            public void run() {
                 try {
                     sleep(5000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
-                }
-                finally {
+                } finally {
                     startActivity(i);
                     finish();
                 }
             }
 
         };
-            timer.start();
+        timer.start();
 
     }
 }

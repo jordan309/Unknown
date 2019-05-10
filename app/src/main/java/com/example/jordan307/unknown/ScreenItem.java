@@ -2,7 +2,7 @@ package com.example.jordan307.unknown;
 
 public class ScreenItem {
 
-    String Title,Description;
+    String Title, Description;
     int Screenimg;
 
 

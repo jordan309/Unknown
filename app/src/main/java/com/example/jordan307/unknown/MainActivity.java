@@ -11,6 +11,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -27,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
 
     //Disable Back Button
     @Override
-    public void onBackPressed(){}
+    public void onBackPressed() {
+    }
 
 
     private void initialScores() {
@@ -159,25 +161,25 @@ public class MainActivity extends AppCompatActivity {
         answer1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switch(mA1Type) {
+                switch (mA1Type) {
                     case "Hunger":
-                        if (mA1AnswerEffectOperator == "Pos" ){
+                        if (mA1AnswerEffectOperator == "Pos") {
                             foodValue += Integer.parseInt(mA1AnswerEffectValues);
-                        }else{
+                        } else {
                             foodValue -= Integer.parseInt(mA1AnswerEffectValues);
                         }
                         break;
                     case "Water":
-                        if (mA1AnswerEffectOperator == "Pos" ){
+                        if (mA1AnswerEffectOperator == "Pos") {
                             waterValue += Integer.parseInt(mA1AnswerEffectValues);
-                        }else{
+                        } else {
                             waterValue -= Integer.parseInt(mA1AnswerEffectValues);
                         }
                         break;
                     case "Sanity":
-                        if (mA1AnswerEffectOperator == "Pos" ){
+                        if (mA1AnswerEffectOperator == "Pos") {
                             sanityValue += Integer.parseInt(mA1AnswerEffectValues);
-                        }else{
+                        } else {
                             sanityValue -= Integer.parseInt(mA1AnswerEffectValues);
                         }
                         break;
@@ -197,25 +199,25 @@ public class MainActivity extends AppCompatActivity {
         answer2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switch(mA2Type) {
+                switch (mA2Type) {
                     case "Hunger":
-                        if (mA2AnswerEffectOperator == "Pos" ){
+                        if (mA2AnswerEffectOperator == "Pos") {
                             foodValue += Integer.parseInt(mA2AnswerEffectValues);
-                        }else{
+                        } else {
                             foodValue -= Integer.parseInt(mA2AnswerEffectValues);
                         }
                         break;
                     case "Water":
-                        if (mA2AnswerEffectOperator == "Pos" ){
+                        if (mA2AnswerEffectOperator == "Pos") {
                             waterValue += Integer.parseInt(mA2AnswerEffectValues);
-                        }else{
+                        } else {
                             waterValue -= Integer.parseInt(mA2AnswerEffectValues);
                         }
                         break;
                     case "Sanity":
-                        if (mA2AnswerEffectOperator == "Pos" ){
+                        if (mA2AnswerEffectOperator == "Pos") {
                             sanityValue += Integer.parseInt(mA2AnswerEffectValues);
-                        }else{
+                        } else {
                             sanityValue -= Integer.parseInt(mA2AnswerEffectValues);
                         }
                         break;
@@ -236,25 +238,25 @@ public class MainActivity extends AppCompatActivity {
         answer3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switch(mA3Type) {
+                switch (mA3Type) {
                     case "Hunger":
-                        if (mA3AnswerEffectOperator == "Pos" ){
+                        if (mA3AnswerEffectOperator == "Pos") {
                             foodValue += Integer.parseInt(mA3AnswerEffectValues);
-                        }else{
+                        } else {
                             foodValue -= Integer.parseInt(mA3AnswerEffectValues);
                         }
                         break;
                     case "Water":
-                        if (mA3AnswerEffectOperator == "Pos" ){
+                        if (mA3AnswerEffectOperator == "Pos") {
                             waterValue += Integer.parseInt(mA3AnswerEffectValues);
-                        }else{
+                        } else {
                             waterValue -= Integer.parseInt(mA3AnswerEffectValues);
                         }
                         break;
                     case "Sanity":
-                        if (mA3AnswerEffectOperator == "Pos" ){
+                        if (mA3AnswerEffectOperator == "Pos") {
                             sanityValue += Integer.parseInt(mA3AnswerEffectValues);
-                        }else{
+                        } else {
                             sanityValue -= Integer.parseInt(mA3AnswerEffectValues);
                         }
                         break;
@@ -272,39 +274,37 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
-
-
     }
+
     private void updateScores() {
         foodScore.setText("Food " + foodValue + "%");
         waterScore.setText("Water " + waterValue + "%");
         sanityScore.setText("Sanity " + sanityValue + "%");
     }
 
-    private void winCheck(){
-        if (mQuestionNumber >= 51){
+    private void winCheck() {
+        if (mQuestionNumber >= 51) {
             Intent intent = new Intent(getApplicationContext(), GameWin.class);
             startActivity(intent);
         }
     }
 
-    private void FoodLoseCheck(){
-        if (foodValue <= 0){
+    private void FoodLoseCheck() {
+        if (foodValue <= 0) {
             Intent intent = new Intent(getApplicationContext(), GameLossFood.class);
             startActivity(intent);
         }
     }
 
-    private void SanityLoseCheck(){
-        if (sanityValue <= 0){
+    private void SanityLoseCheck() {
+        if (sanityValue <= 0) {
             Intent intent = new Intent(getApplicationContext(), GameLossSanity.class);
             startActivity(intent);
         }
     }
 
-    private void WaterLoseCheck(){
-        if (waterValue <= 0){
+    private void WaterLoseCheck() {
+        if (waterValue <= 0) {
             Intent intent = new Intent(getApplicationContext(), GameLossWater.class);
             startActivity(intent);
         }
@@ -312,7 +312,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void updateQuestion() {
         if (mQuestionNumber < 51) {
-            question.setText(mQuestions.getQuestionData( mQuestionNumber,0,  0, 0, 0));
+            question.setText(mQuestions.getQuestionData(mQuestionNumber, 0, 0, 0, 0));
 
             answer1.setText(mQuestions.getQuestionData(mQuestionNumber, 1, 0, 0, 0));
             answer2.setText(mQuestions.getQuestionData(mQuestionNumber, 1, 1, 0, 0));
@@ -349,13 +349,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onSaveInstanceState(Bundle outState) {
 
-        outState.putString("story",question.getText().toString());
-        outState.putString("answer1",answer1.getText().toString());
-        outState.putString("answer2",answer2.getText().toString());
-        outState.putString("answer3",answer3.getText().toString());
-        outState.putString("sanity",sanityScore.getText().toString());
-        outState.putString("water",waterScore.getText().toString());
-        outState.putString("food",foodScore.getText().toString());
+        outState.putString("story", question.getText().toString());
+        outState.putString("answer1", answer1.getText().toString());
+        outState.putString("answer2", answer2.getText().toString());
+        outState.putString("answer3", answer3.getText().toString());
+        outState.putString("sanity", sanityScore.getText().toString());
+        outState.putString("water", waterScore.getText().toString());
+        outState.putString("food", foodScore.getText().toString());
         super.onSaveInstanceState(outState);
 
 

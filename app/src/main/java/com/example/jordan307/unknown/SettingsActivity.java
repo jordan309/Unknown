@@ -12,25 +12,36 @@ import android.widget.ImageButton;
 
 public class SettingsActivity extends AppCompatActivity {
 
-    Button loadgame;
+    private MediaPlayer mp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         // Activity set to full screen
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
         setContentView(R.layout.activity_settings);
 
-        loadgame = findViewById(R.id.load);
-        loadgame.setOnClickListener(new View.OnClickListener() {
+        ImageButton stop = (ImageButton) findViewById(R.id.volume);
+
+        stop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                stopPlaying();
+                mp = MediaPlayer.create(SettingsActivity.this, R.raw.background_music);
+                mp.stop();
             }
         });
-
     }
+
+    private void stopPlaying() {
+        if (mp != null) {
+            mp.stop();
+            mp.release();
+            mp = null;
+        }
+    }
+
 }
+

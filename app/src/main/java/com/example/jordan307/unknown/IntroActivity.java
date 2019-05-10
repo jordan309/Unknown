@@ -25,7 +25,8 @@ public class IntroActivity extends AppCompatActivity {
 
     //Disable Back Button
     @Override
-    public void onBackPressed(){}
+    public void onBackPressed() {
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,14 +48,14 @@ public class IntroActivity extends AppCompatActivity {
 
         // Fill list screen
         List<ScreenItem> mList = new ArrayList<>();
-        mList.add(new ScreenItem("Connor", "A team leader, logical thinker and problem solver. He plans things before making decisions and relies on others for approval to move forward. He lacks confidence at times and is afraid of heights, he can't swim well either.",R.drawable.connor));
-        mList.add(new ScreenItem("Amy", "Survival training background and can adapt to different environments. She can be difficult to deal with as she believes her opinion is always best. She is claustrophobic and avoids socialising. ",R.drawable.amy));
-        mList.add(new ScreenItem("Trevor", "He knows how to keep people calm during stressful moments. Has always been a persistent person on achieving tasks and motivating others. He fears death and would never put himself in a situation that could risk his life.",R.drawable.trevor));
-        mList.add(new ScreenItem("Evelyn", "She is observant, kind and has a positive attitude. A lot of people trust her as she is confident and open minded. She doesn't like to be alone, especially in the dark. Her anxiety can take over unpredictably, which will cause her to think irrationally.  ",R.drawable.evelyn));
+        mList.add(new ScreenItem("Connor", "A team leader, logical thinker and problem solver. He plans things before making decisions and relies on others for approval to move forward. He lacks confidence at times and is afraid of heights, he can't swim well either.", R.drawable.connor));
+        mList.add(new ScreenItem("Amy", "Survival training background and can adapt to different environments. She can be difficult to deal with as she believes her opinion is always best. She is claustrophobic and avoids socialising. ", R.drawable.amy));
+        mList.add(new ScreenItem("Trevor", "He knows how to keep people calm during stressful moments. Has always been a persistent person on achieving tasks and motivating others. He fears death and would never put himself in a situation that could risk his life.", R.drawable.trevor));
+        mList.add(new ScreenItem("Evelyn", "She is observant, kind and has a positive attitude. A lot of people trust her as she is confident and open minded. She doesn't like to be alone, especially in the dark. Her anxiety can take over unpredictably, which will cause her to think irrationally.  ", R.drawable.evelyn));
 
         // Setup viewpager
         screenPager = findViewById(R.id.screen_viewpager);
-        introViewPagerAdapter = new IntroViewPagerAdapter(this,mList);
+        introViewPagerAdapter = new IntroViewPagerAdapter(this, mList);
         screenPager.setAdapter(introViewPagerAdapter);
 
 
@@ -65,7 +66,7 @@ public class IntroActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 // Open main activity
-                Intent mainActivity = new Intent(getApplicationContext(),MainActivity.class);
+                Intent mainActivity = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(mainActivity);
 
             }
