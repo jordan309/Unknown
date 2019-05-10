@@ -2,8 +2,8 @@
 Platform: Android 
 
 Team members:
-Jordan Wood - 216120546
-Daniel Harwood - 214129318
+- Jordan Wood - 216120546
+- Daniel Harwood - 214129318
 
 This is an android text-based survival game. The genre of the game is horror.
 
