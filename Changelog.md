@@ -324,3 +324,31 @@ Still working on features:
 - Added story results up to level 12
 
 
+# Week 8
+# 27/04/19 Saturday [Jordan]
+
+Save and load buttons work, only part of the story saves for now. Still trying to figure out how to save the percentages and button choices on load. 
+
+Still working on features: 
+- Create countdown timer
+- Log page of saves
+- Sound effects for each part of the story
+
+
+# Week 9
+# 5/05/19 Saturday [Jordan]
+
+I completed the script of the game. All text and storyline is now fully complete.
+
+Still working on features: 
+- Countdown timer start from 20s, -20 on each percentage if reaches 0 then reset. 
+- Settings image button tap to mute all sounds. 
+- Sound on each part of the story, only place once no loop 
+- Art for game over and win screens 
+- App meets google play store guidelines
+
+# 8/05/19 Wednesday [Henry]
+- Good progress. Glad to see it's getting closer. Final stretch now. 
+- Make sure you go over everything in the Grading Criteria super carefully, to ensure you meet each point.
+
+
