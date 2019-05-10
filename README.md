@@ -1,5 +1,5 @@
 # Project Name: Unknown
-##Platform:## Android 
+##Platform: Android 
 
 Team members:
 - Jordan Wood - 216120546
