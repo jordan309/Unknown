@@ -1,4 +1,4 @@
-Images Files: 
+#Images Files: 
 
 Background Art and Menu Text
 Created by Daniel Harwood
@@ -26,7 +26,7 @@ Unsplash, Alone In The Woods | HD photo by m wrona (@maciek_wrona) on Unsplash. 
 
 
 
-Music files: 
+#Music files: 
 
 Background:
 Anon, Royalty Free Music - ZapSplat - Download free sound effects. ZapSplat. Available at: https://www.zapsplat.com/sound-effect-category/royalty-free-music/ [Accessed April 6, 2019].
