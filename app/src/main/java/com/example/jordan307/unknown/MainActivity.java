@@ -1,6 +1,7 @@
 package com.example.jordan307.unknown;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.CountDownTimer;
@@ -18,13 +19,20 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
+
+    private static final long COUNTDOWN_IN_MILLIS = 20000;
 
     private static final String FILE_NAME = "saved.txt";
 
     private TextView mTextViewCount;
     private int mCount;
+
+    private TextView textViewCountDown;
+    private CountDownTimer countDownTimer;
+    private long timeLeftInMillis;
 
     //Disable Back Button
     @Override
@@ -152,6 +160,8 @@ public class MainActivity extends AppCompatActivity {
         sanityScore = findViewById(R.id.sscore);
         question = findViewById(R.id.question);
         dResults = findViewById(R.id.dresults);
+
+        textViewCountDown = findViewById(R.id.text_view_countdown);
 
         //Assigning text to the elements on the page based on the current values of the resources
         updateQuestion();
@@ -332,10 +342,41 @@ public class MainActivity extends AppCompatActivity {
 
 
             mQuestionNumber++;
+            timeLeftInMillis = COUNTDOWN_IN_MILLIS;
+            startCountdown();
 
             System.out.println(mA1AnswerEffectValues);
         }
 
+    }
+
+    private void startCountdown() {
+        countDownTimer = new CountDownTimer(timeLeftInMillis, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                timeLeftInMillis = millisUntilFinished;
+                updateCountDownText();
+            }
+
+            @Override
+            public void onFinish() {
+                timeLeftInMillis = 0;
+                updateCountDownText();
+
+            }
+        }.start();
+    }
+
+    private void updateCountDownText() {
+        int minutes = (int) (timeLeftInMillis / 1000) / 60;
+        int seconds = (int) (timeLeftInMillis / 1000) % 60;
+
+        String timeFormatted = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
+
+        textViewCountDown.setText(timeFormatted);
+
+        if (timeLeftInMillis < 10000) {
+        }
     }
 
 
@@ -374,4 +415,14 @@ public class MainActivity extends AppCompatActivity {
         waterScore.setText(savedInstanceState.getString("water"));
         foodScore.setText(savedInstanceState.getString("food"));
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (countDownTimer != null) {
+            countDownTimer.cancel();
+        }
+    }
+
+
 }

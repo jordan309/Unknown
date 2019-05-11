@@ -26,6 +26,24 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.986" />
 
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text=""
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084" />
+
     <Button
         android:id="@+id/answer2"
         android:layout_width="119dp"
@@ -44,7 +62,7 @@
         app:layout_constraintVertical_bias="0.986" />
 
     <Button
-        android:id="@+id/charPow"
+        android:id="@+id/load"
         android:layout_width="119dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
@@ -53,7 +71,7 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/btn_gradient_style"
         android:gravity="center"
-        android:text="Button"
+        android:text="Load"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.028"
@@ -201,7 +219,7 @@
         app:srcCompat="@drawable/food" />
 
     <Button
-        android:id="@+id/savenow"
+        android:id="@+id/saveGame"
         android:layout_width="119dp"
         android:layout_height="54dp"
         android:layout_marginStart="8dp"
