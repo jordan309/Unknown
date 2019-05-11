@@ -352,3 +352,16 @@ Still working on features:
 - Make sure you go over everything in the Grading Criteria super carefully, to ensure you meet each point.
 
 
+# Week 10
+# 11/05/19 Saturday [Jordan]
+
+A 20 second countdown was added to the game for each choice to make it more challenging. Bugs and errors were also fixed in this update.
+
+Still working on features: 
+- Back button icon
+- Fixing landscape mode crash
+- Fixing save / load bug
+- Testing
+
+
+
