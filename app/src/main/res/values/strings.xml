@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Survival Game</string>
+    <string name="title_activity_game_win">GameWin</string>
+    <string name="title_activity_game_loss_water">GameLossWater</string>
+    <string name="title_activity_game_loss_sanity">GameLossSanity</string>
+    <string name="title_activity_game_loss_food">GameLossFood</string>
+    <string name="title_activity_character_select">CharacterSelect</string>
 </resources>

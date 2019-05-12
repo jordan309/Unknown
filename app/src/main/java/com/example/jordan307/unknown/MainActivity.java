@@ -131,6 +131,11 @@ public class MainActivity extends AppCompatActivity {
     private String mA2RDialog;
     private String mA3RDialog;
 
+
+    //Character Variables
+    private int powerCounter = 1;
+    private String Name = CharacterSelect.characterName;
+
     //Question number variable
     private int mQuestionNumber = 0;
 
