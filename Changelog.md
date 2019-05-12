@@ -355,10 +355,10 @@ Still working on features:
 ## 20/04/19 - 21/04/19 - Saturday + Sunday [Daniel]
 
 Changed the following files from Java Classes to Activites so they can be properly edited with their own layouts;
-- GameLossFood
-- GameLossSanity
-- GameLossWater
-- GameWin
+    - GameLossFood
+    - GameLossSanity
+    - GameLossWater
+    - GameWin
 Layouts for each of these have been added to the res folder.
 
 - Fixed an issue with all new layouts not being full screen
