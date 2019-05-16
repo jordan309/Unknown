@@ -7,10 +7,7 @@
     android:background="@drawable/menubackground"
     tools:context=".GameWin">
 
-<<<<<<< HEAD
     <!-- Victory text -->
-=======
->>>>>>> e0b2940b3468eee7397f1e7dce6bfe8dd2b458fa
     <TextView
         android:id="@+id/textView3"
         android:layout_width="402dp"
@@ -19,20 +16,14 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:text="Victory"
-<<<<<<< HEAD
         android:gravity="center"
-=======
->>>>>>> e0b2940b3468eee7397f1e7dce6bfe8dd2b458fa
         android:textColor="#fff"
         android:textSize="80sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-<<<<<<< HEAD
     <!-- You won text -->
-=======
->>>>>>> e0b2940b3468eee7397f1e7dce6bfe8dd2b458fa
     <TextView
         android:id="@+id/textView2"
         android:layout_width="348dp"
@@ -40,10 +31,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="52dp"
         android:layout_marginEnd="8dp"
-<<<<<<< HEAD
         android:gravity="center"
-=======
->>>>>>> e0b2940b3468eee7397f1e7dce6bfe8dd2b458fa
         android:text="You Won"
         android:textColor="#fff"
         android:textSize="50sp"
@@ -52,10 +40,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-<<<<<<< HEAD
     <!-- Back to main menu button -->
-=======
->>>>>>> e0b2940b3468eee7397f1e7dce6bfe8dd2b458fa
     <Button
         android:id="@+id/GGMenu"
         android:layout_width="221dp"
@@ -64,12 +49,8 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-<<<<<<< HEAD
         android:background="@drawable/btn_gradient_style"
         android:text="Congratulations! \n Back to main menu"
-=======
-        android:text="Button"
->>>>>>> e0b2940b3468eee7397f1e7dce6bfe8dd2b458fa
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

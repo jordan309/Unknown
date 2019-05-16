@@ -29,10 +29,6 @@ public class CharacterSelect extends AppCompatActivity {
         setContentView(R.layout.activity_character_select);
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> e0b2940b3468eee7397f1e7dce6bfe8dd2b458fa
         //Select Evelyn
         final Button evelyn = (Button) findViewById(R.id.CharacterEvelyn);
         evelyn.setOnClickListener(new View.OnClickListener() {

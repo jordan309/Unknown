@@ -7,11 +7,7 @@
     android:background="@drawable/menubackground"
     tools:context=".GameLossWater">
 
-<<<<<<< HEAD
     <!-- Game over text -->
-=======
-
->>>>>>> e0b2940b3468eee7397f1e7dce6bfe8dd2b458fa
     <TextView
         android:id="@+id/textView3"
         android:layout_width="402dp"
@@ -26,20 +22,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-<<<<<<< HEAD
     <!-- Dehydration text -->
-=======
->>>>>>> e0b2940b3468eee7397f1e7dce6bfe8dd2b458fa
     <TextView
         android:id="@+id/textView2"
         android:layout_width="348dp"
         android:layout_height="140dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="52dp"
-<<<<<<< HEAD
         android:gravity="center"
-=======
->>>>>>> e0b2940b3468eee7397f1e7dce6bfe8dd2b458fa
         android:layout_marginEnd="8dp"
         android:text="You Died of Dehydration"
         android:textColor="#fff"
@@ -49,10 +39,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-<<<<<<< HEAD
     <!-- Back to main menu button -->
-=======
->>>>>>> e0b2940b3468eee7397f1e7dce6bfe8dd2b458fa
     <Button
         android:id="@+id/GGMenu"
         android:layout_width="221dp"
@@ -61,13 +48,9 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-<<<<<<< HEAD
         android:background="@drawable/btn_gradient_style"
         android:text="Back to main menu"
         android:textColor="#000"
-=======
-        android:text="Button"
->>>>>>> e0b2940b3468eee7397f1e7dce6bfe8dd2b458fa
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

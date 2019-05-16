@@ -37,10 +37,6 @@
         <activity android:name=".AboutActivity" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".MenuActivity" />
-<<<<<<< HEAD
-=======
-        <activity android:name=".IntroActivity" />
->>>>>>> e0b2940b3468eee7397f1e7dce6bfe8dd2b458fa
         <activity android:name=".MainActivity" />
         <activity android:name=".Splashscreen">
             <intent-filter>
