@@ -352,7 +352,7 @@ Still working on features:
 - Make sure you go over everything in the Grading Criteria super carefully, to ensure you meet each point.
 
 # Week 9
-## 20/04/19 - 21/04/19 - Saturday + Sunday [Daniel]
+## Saturday + Sunday [Daniel]
 
 Changed the following files from Java Classes to Activites so they can be properly edited with their own layouts;
    - GameLossFood
@@ -397,6 +397,14 @@ Still working on features:
 - Fixing landscape mode crash
 - Fixing save / load bug
 - Testing
+
+# Week 10
+## 16/05/19 - Wednesday [Daniel]
+
+- Added character select screen into the menu of the main game in between initial character choice and the main gameplay activity
+- Added in a new case that changes the players starting stats based on the character they chose
+- Added the above case to the already existing initialScores function
+- Added additional coding comments
 
 
 
