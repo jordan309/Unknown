@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 
 
-//Responsible for checking if the device has exited the app and stopping the mustic if that has happened
+//Responsible for checking if the device has exited the app and stopping the music if that has happened
 public class HomeStop {
 
     private Context mContext;

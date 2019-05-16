@@ -23,13 +23,15 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final long COUNTDOWN_IN_MILLIS = 20000;
+    //Countdown timer will start at 20 seconds
+    private static final long COUNTDOWN_IN_MILLIS = 21000;
 
+    //Internal storage saving string
     private static final String FILE_NAME = "saved.txt";
 
+    //Defining text views for functions to make use of
     private TextView mTextViewCount;
     private int mCount;
-
     private TextView textViewCountDown;
     private CountDownTimer countDownTimer;
     private long timeLeftInMillis;
@@ -40,19 +42,72 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    //Function that sets the initial player resource values based on the character they chose in the character select screen
     private void initialScores() {
-        foodScore.setText("Food " + foodValue + "%");
-        waterScore.setText("Water " + waterValue + "%");
-        sanityScore.setText("Sanity " + sanityValue + "%");
+        switch (Name) {
+            case "evelyn": {
+                foodValue = 150;
+                sanityValue = 80;
+                foodScore.setText("Food " + foodValue + "%");
+                waterScore.setText("Water " + waterValue + "%");
+                sanityScore.setText("Sanity " + sanityValue + "%");
+                break;
+            }
+
+            case "trevor": {
+                waterValue = 150;
+                foodValue = 80;
+                foodScore.setText("Food " + foodValue + "%");
+                waterScore.setText("Water " + waterValue + "%");
+                sanityScore.setText("Sanity " + sanityValue + "%");
+                break;
+            }
+
+            case "amy": {
+                sanityValue = 150;
+                waterValue = 80;
+                foodScore.setText("Food " + foodValue + "%");
+                waterScore.setText("Water " + waterValue + "%");
+                sanityScore.setText("Sanity " + sanityValue + "%");
+                break;
+            }
+
+            case "connor": {
+                foodValue = 110;
+                waterValue = 110;
+                sanityValue = 110;
+                foodScore.setText("Food " + foodValue + "%");
+                waterScore.setText("Water " + waterValue + "%");
+                sanityScore.setText("Sanity " + sanityValue + "%");
+                break;
+            }
+
+        }
+
     }
 
+    //Saving strings to internal storage on device
     public void save(View v) {
-        String text = question.getText().toString();
+        String food = foodScore.getText().toString();
+        String water = waterScore.getText().toString();
+        String sanity = sanityScore.getText().toString();
+        String hello = question.getText().toString();
+        String bye = dResults.getText().toString();
+        String one = answer1.getText().toString();
+        String two = answer2.getText().toString();
+        String three = answer3.getText().toString();
         FileOutputStream fos = null;
 
         try {
             fos = openFileOutput(FILE_NAME, MODE_PRIVATE);
-            fos.write(text.getBytes());
+            fos.write(hello.getBytes());
+            fos.write(bye.getBytes());
+            fos.write(food.getBytes());
+            fos.write(water.getBytes());
+            fos.write(sanity.getBytes());
+            fos.write(one.getBytes());
+            fos.write(two.getBytes());
+            fos.write(three.getBytes());
             Toast.makeText(this, "Save to " + getFilesDir() + "/" + FILE_NAME, Toast.LENGTH_LONG).show();
 
         } catch (FileNotFoundException e) {
@@ -70,6 +125,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //Loading strings from internal storage on device
     public void load(View v) {
         FileInputStream fis = null;
 
@@ -81,10 +137,17 @@ public class MainActivity extends AppCompatActivity {
             String text;
 
             while ((text = br.readLine()) != null) {
-                sb.append(text);
+                sb.append(text).append("\n");
             }
 
+            answer1.setText(sb.toString());
+            answer2.setText(sb.toString());
+            answer3.setText(sb.toString());
             question.setText(sb.toString());
+            dResults.setText(sb.toString());
+            foodScore.setText(sb.toString());
+            waterScore.setText(sb.toString());
+            sanityScore.setText(sb.toString());
 
 
         } catch (FileNotFoundException e) {
@@ -103,21 +166,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    //Defining the buttons
+    //Defining in game buttons for functions to make use of
     Button answer1, answer2, answer3;
 
+    //Defining text views for functions to make use of
     TextView foodScore, waterScore, sanityScore, question, dResults;
-
+    //Number of questions that have been completed so far which is used as a reference for the main game array
     private Questions mQuestions = new Questions();
+    private int mQuestionNumber = 0;
 
-
-    //Player resource variables
+    //Sets base player resource values before character class modifications
     private int foodValue = 100;
     private int waterValue = 100;
     private int sanityValue = 100;
 
 
-    //Question Variables
+    //Question and core gameplay variables taken from the main gameplay array.
     private String mA1AnswerEffectValues;
     private String mA2AnswerEffectValues;
     private String mA3AnswerEffectValues;
@@ -131,8 +195,9 @@ public class MainActivity extends AppCompatActivity {
     private String mA2RDialog;
     private String mA3RDialog;
 
-    //Question number variable
-    private int mQuestionNumber = 0;
+
+    //Character variable taken from character select activity
+    private String Name = CharacterSelect.characterName;
 
 
     @Override
@@ -140,7 +205,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
 
-        // Activity set to full screen
+        //Activity set to full screen
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -168,9 +233,11 @@ public class MainActivity extends AppCompatActivity {
         initialScores();
 
 
+        //When the first answer button is selected the following code will run
         answer1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //A switch that will check which resource is being altered based on the players answer and determine if it is to be subtracted or added to
                 switch (mA1Type) {
                     case "Hunger":
                         if (mA1AnswerEffectOperator == "Pos") {
@@ -195,20 +262,18 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                 }
+                countDownTimer.cancel();
                 dResults.setText(mA1RDialog);
-                updateScores();
-                updateQuestion();
-                winCheck();
-                FoodLoseCheck();
-                SanityLoseCheck();
-                WaterLoseCheck();
+                answerMaint();
+
             }
         });
 
-
+        //When the second answer button is selected the following code will run
         answer2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //A switch that will check which resource is being altered based on the players answer and determine if it is to be subtracted or added to
                 switch (mA2Type) {
                     case "Hunger":
                         if (mA2AnswerEffectOperator == "Pos") {
@@ -233,21 +298,19 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                 }
+                countDownTimer.cancel();
                 dResults.setText(mA2RDialog);
-                updateScores();
-                updateQuestion();
-                winCheck();
-                FoodLoseCheck();
-                SanityLoseCheck();
-                WaterLoseCheck();
+                answerMaint();
 
             }
 
         });
 
+        //When the third answer button is selected the following code will run
         answer3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //A switch that will check which resource is being altered based on the players answer and determine if it is to be subtracted or added to
                 switch (mA3Type) {
                     case "Hunger":
                         if (mA3AnswerEffectOperator == "Pos") {
@@ -272,13 +335,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                 }
+                countDownTimer.cancel();
                 dResults.setText(mA3RDialog);
-                updateScores();
-                updateQuestion();
-                winCheck();
-                FoodLoseCheck();
-                SanityLoseCheck();
-                WaterLoseCheck();
+                answerMaint();
 
             }
         });
@@ -286,12 +345,24 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //A function that is used to run other functions and save duplicating code every time each of these tasks must be run
+    private void answerMaint() {
+        updateScores();
+        updateQuestion();
+        winCheck();
+        FoodLoseCheck();
+        SanityLoseCheck();
+        WaterLoseCheck();
+    }
+
+    //Updates the game scores based on current values stored within each of the score variables
     private void updateScores() {
         foodScore.setText("Food " + foodValue + "%");
         waterScore.setText("Water " + waterValue + "%");
         sanityScore.setText("Sanity " + sanityValue + "%");
     }
 
+    //Checks if the player has beaten the game by completing the final question
     private void winCheck() {
         if (mQuestionNumber >= 51) {
             Intent intent = new Intent(getApplicationContext(), GameWin.class);
@@ -299,6 +370,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //Checks the players food score to see if it is less than or equal to 0 resulting in a game loss.
     private void FoodLoseCheck() {
         if (foodValue <= 0) {
             Intent intent = new Intent(getApplicationContext(), GameLossFood.class);
@@ -306,6 +378,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //Checks the players sanity score to see if it is less than or equal to 0 resulting in a game loss.
     private void SanityLoseCheck() {
         if (sanityValue <= 0) {
             Intent intent = new Intent(getApplicationContext(), GameLossSanity.class);
@@ -313,12 +386,16 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //Checks the players water score to see if it is less than or equal to 0 resulting in a game loss.
     private void WaterLoseCheck() {
         if (waterValue <= 0) {
             Intent intent = new Intent(getApplicationContext(), GameLossWater.class);
             startActivity(intent);
         }
     }
+
+    /*Updates the games data variables from the data stored in the main game array. Each time this function is run it will fetch new data from the
+    array based on the games current question number*/
 
     private void updateQuestion() {
         if (mQuestionNumber < 51) {
@@ -350,6 +427,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //Creates a new countdown and when it finishes
     private void startCountdown() {
         countDownTimer = new CountDownTimer(timeLeftInMillis, 1000) {
             @Override
@@ -362,11 +440,14 @@ public class MainActivity extends AppCompatActivity {
             public void onFinish() {
                 timeLeftInMillis = 0;
                 updateCountDownText();
-
+                foodValue = foodValue - 20;
+                waterValue = waterValue - 20;
+                sanityValue = sanityValue - 20;
             }
         }.start();
     }
 
+    //Defines the measurements of the countdown
     private void updateCountDownText() {
         int minutes = (int) (timeLeftInMillis / 1000) / 60;
         int seconds = (int) (timeLeftInMillis / 1000) % 60;
@@ -416,6 +497,7 @@ public class MainActivity extends AppCompatActivity {
         foodScore.setText(savedInstanceState.getString("food"));
     }
 
+    //Cancel countdown
     @Override
     protected void onDestroy() {
         super.onDestroy();

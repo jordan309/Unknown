@@ -24,12 +24,15 @@ public class Splashscreen extends AppCompatActivity {
 
         setContentView(R.layout.activity_splashscreen);
 
+        //Loading and playing the animation
         iv = (ImageView) findViewById(R.id.iv);
         Animation myanim = AnimationUtils.loadAnimation(this, R.anim.splash_transition);
         iv.startAnimation(myanim);
 
+        //Load main menu activity after splashscreen display
         final Intent i = new Intent(this, MenuActivity.class);
 
+        //Wait 5 seconds before loading menu
         Thread timer = new Thread() {
             public void run() {
                 try {

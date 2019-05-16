@@ -9,18 +9,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".CharacterSelect"
+            android:label="@string/title_activity_character_select"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".GameLossFood"
+            android:label="@string/title_activity_game_loss_food"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GameLossSanity"
+            android:label="@string/title_activity_game_loss_sanity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GameLossWater"
+            android:label="@string/title_activity_game_loss_water"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GameWin"
+            android:label="@string/title_activity_game_win"
+            android:theme="@style/AppTheme.NoActionBar" />
+
         <service
             android:name=".MusicService"
             android:enabled="true" />
-        <activity android:name=".AboutActivity"></activity>
+
+        <activity android:name=".AboutActivity" />
         <activity android:name=".SettingsActivity" />
-        <activity android:name=".MenuActivity"> </activity>
-        <activity android:name=".IntroActivity" />
-        <activity android:name=".GameWin" />
-        <activity android:name=".GameLossFood" />
-        <activity android:name=".GameLossSanity" />
-        <activity android:name=".GameLossWater" />
-        <activity android:name=".MainActivity"> </activity>
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".Splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

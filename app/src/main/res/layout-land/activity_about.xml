@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AboutActivity"
-    android:background="@drawable/menubackground">
+    android:background="@drawable/menubackground"
+    tools:context=".AboutActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -40,8 +40,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="By Jordan Wood and Daniel Harwood"
                 android:layout_marginTop="120dp"
+                android:text="By Jordan Wood and Daniel Harwood"
                 android:textColor="#fff"
                 android:textSize="14sp" />
 

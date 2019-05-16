@@ -7,46 +7,37 @@
     android:background="@drawable/menubackground"
     tools:context=".MenuActivity">
 
-
+    <!-- Title image text -->
     <ImageView
         android:id="@+id/title_image"
-        android:layout_width="wrap_content"
+        android:layout_width="400dp"
         android:layout_height="100dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/menutitle" />
 
+    <!-- About image text -->
     <ImageView
         android:id="@+id/about_image"
         android:layout_width="283dp"
-        android:layout_height="50dp"
+        android:layout_height="74dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/PlayButton"
         app:srcCompat="@drawable/menuabout" />
 
-    <ImageView
-        android:id="@+id/settings_image"
-        android:layout_width="283dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/about_image"
-        app:srcCompat="@drawable/menusettings" />
-
+    <!-- Play image text -->
     <ImageView
         android:id="@+id/play_image"
         android:layout_width="225dp"
-        android:layout_height="50dp"
+        android:layout_height="74dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
@@ -55,6 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/title_image"
         app:srcCompat="@drawable/menuplay" />
 
+    <!-- Play button select -->
     <Button
         android:id="@+id/PlayButton"
         android:layout_width="232dp"
@@ -67,30 +59,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_image" />
 
+    <!-- About button select -->
     <Button
         android:id="@+id/AboutButton"
         android:layout_width="286dp"
         android:layout_height="80dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
         android:background="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/PlayButton" />
-
-    <Button
-        android:id="@+id/SettingsButton"
-        android:layout_width="286dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@android:color/transparent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AboutButton" />
 
 </android.support.constraint.ConstraintLayout>

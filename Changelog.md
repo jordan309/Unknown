@@ -351,4 +351,60 @@ Still working on features:
 - Good progress. Glad to see it's getting closer. Final stretch now. 
 - Make sure you go over everything in the Grading Criteria super carefully, to ensure you meet each point.
 
+# Week 9
+## Saturday + Sunday [Daniel]
+
+Changed the following files from Java Classes to Activites so they can be properly edited with their own layouts;
+   - GameLossFood
+   - GameLossSanity
+   - GameLossWater
+   - GameWin
+Layouts for each of these have been added to the res folder.
+
+- Fixed an issue with all new layouts not being full screen
+- Fixed an issue with new layouts not being constrained layouts
+
+These changes were made to all of the following listed activites
+- Added placeholder text
+- Added placeholder background
+- Added a back to menu button
+    - GameLossFood
+    - GameLossSanity
+    - GameLossWater
+    - GameWin
+    - Character Select
+
+- Added new activity Character Selection activity
+- Added 4 different Character Select buttons to the selection menu one for each character
+- Added code to each button to allow it to navigate to the main gameplay activity
+- Added code to each button to record which character was chosen by assigning a string to the characterName string variable
+
+- Added 2 new variables to work with character powers
+    - Name (Pulls this from a variable created in Character Select)
+    - Power Counter
+
+
+
+
+
+# Week 10
+# 11/05/19 Saturday [Jordan]
+
+A 20 second countdown was added to the game for each choice to make it more challenging. Bugs and errors were also fixed in this update.
+
+Still working on features: 
+- Back button icon
+- Fixing landscape mode crash
+- Fixing save / load bug
+- Testing
+
+# Week 10
+## 16/05/19 - Wednesday [Daniel]
+
+- Added character select screen into the menu of the main game in between initial character choice and the main gameplay activity
+- Added in a new case that changes the players starting stats based on the character they chose
+- Added the above case to the already existing initialScores function
+- Added additional coding comments
+
+
 

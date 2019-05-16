@@ -19,7 +19,8 @@ public class MenuActivity extends AppCompatActivity {
 
     //Disable Back Button
     @Override
-    public void onBackPressed(){}
+    public void onBackPressed() {
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +50,7 @@ public class MenuActivity extends AppCompatActivity {
                     mServ.pauseMusic();
                 }
             }
+
             @Override
             public void onHomeLongPressed() {
                 if (mServ != null) {
@@ -70,7 +72,7 @@ public class MenuActivity extends AppCompatActivity {
                         if (mServ != null) {
                             mServ.stopMusic();
                         }
-                        Intent intent = new Intent(getApplicationContext(), IntroActivity.class);
+                        Intent intent = new Intent(getApplicationContext(), CharacterSelect.class);
                         startActivity(intent);
                     }
                 });
@@ -92,31 +94,17 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
-        //Navigates the user to the settings page
-        final Button buttonsettings = (Button) findViewById(R.id.SettingsButton);
-        buttonsettings.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                buttonsettings.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent = new Intent(getApplicationContext(), SettingsActivity.class);
-                        startActivity(intent);
-                    }
-                });
-            }
-        });
     }
 
 
     //Music Service Connection
     private boolean mIsBound = false;
     private MusicService mServ;
-    private ServiceConnection Scon =new ServiceConnection(){
+    private ServiceConnection Scon = new ServiceConnection() {
 
         public void onServiceConnected(ComponentName name, IBinder
                 binder) {
-            mServ = ((MusicService.ServiceBinder)binder).getService();
+            mServ = ((MusicService.ServiceBinder) binder).getService();
         }
 
         public void onServiceDisconnected(ComponentName name) {
@@ -125,17 +113,15 @@ public class MenuActivity extends AppCompatActivity {
     };
 
     //Start Music Service
-    void doBindService(){
-        bindService(new Intent(this,MusicService.class),
+    void doBindService() {
+        bindService(new Intent(this, MusicService.class),
                 Scon, Context.BIND_AUTO_CREATE);
         mIsBound = true;
     }
 
     //Stop Music Service (Must be re-initiated and cannot be resumed)
-    void doUnbindService()
-    {
-        if(mIsBound)
-        {
+    void doUnbindService() {
+        if (mIsBound) {
             unbindService(Scon);
             mIsBound = false;
         }
@@ -159,7 +145,7 @@ public class MenuActivity extends AppCompatActivity {
         //UNBIND music service
         doUnbindService();
         Intent music = new Intent();
-        music.setClass(this,MusicService.class);
+        music.setClass(this, MusicService.class);
         stopService(music);
 
     }

@@ -3,22 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/mainbackground"
     android:layout_height="match_parent"
+    android:background="@drawable/mainbackground"
     tools:context=".MainActivity">
 
-
+    <!-- First button choice -->
     <Button
         android:id="@+id/answer1"
         android:layout_width="119dp"
-        android:layout_height="107dp"
+        android:layout_height="95dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_gradient_style"
         android:gravity="center"
         android:text="Button"
-        android:background="@drawable/btn_gradient_style"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.028"
@@ -26,41 +26,25 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.986" />
 
-    <TextView
-        android:id="@+id/text_view_countdown"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text=""
-        android:textColor="#fff"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.933"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.084" />
-
+    <!-- Second button choice -->
     <Button
         android:id="@+id/answer2"
         android:layout_width="119dp"
-        android:layout_height="107dp"
+        android:layout_height="95dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_gradient_style"
         android:gravity="center"
         android:text="Button"
-        android:background="@drawable/btn_gradient_style"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.986" />
 
+    <!-- Load game button -->
     <Button
         android:id="@+id/load"
         android:layout_width="119dp"
@@ -71,25 +55,27 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/btn_gradient_style"
         android:gravity="center"
+        android:onClick="load"
         android:text="Load"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.028"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.645" />
+        app:layout_constraintVertical_bias="0.671" />
 
+    <!-- Third button choice -->
     <Button
         android:id="@+id/answer3"
         android:layout_width="119dp"
-        android:layout_height="107dp"
+        android:layout_height="95dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_gradient_style"
         android:gravity="center"
         android:text="Button"
-        android:background="@drawable/btn_gradient_style"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.971"
@@ -97,6 +83,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.986" />
 
+    <!-- Hunger percentage textview -->
     <TextView
         android:id="@+id/fscore"
         android:layout_width="101dp"
@@ -115,6 +102,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.031" />
 
+    <!-- Water percentage textview -->
     <TextView
         android:id="@+id/wscore"
         android:layout_width="104dp"
@@ -128,11 +116,12 @@
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.031" />
 
+    <!-- Sanity percentage textview -->
     <TextView
         android:id="@+id/sscore"
         android:layout_width="101dp"
@@ -146,29 +135,50 @@
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintHorizontal_bias="0.885"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.031" />
 
+    <!-- Storyline textview -->
     <TextView
         android:id="@+id/question"
-        android:layout_width="384dp"
-        android:layout_height="222dp"
+        android:layout_width="350dp"
+        android:layout_height="130dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="TextView"
         android:textColor="@color/intro_title_colour"
-        android:textSize="20sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.257" />
+        app:layout_constraintVertical_bias="0.577" />
 
+    <!-- Result of choice selected textview -->
+    <TextView
+        android:id="@+id/dresults"
+        android:layout_width="350dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textColor="@color/intro_title_colour"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <!-- Water icon image -->
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="19dp"
@@ -180,12 +190,13 @@
         android:contentDescription="TODO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.029"
         app:srcCompat="@drawable/ic_water_white_24dp" />
 
+    <!-- Eye icon sanity image -->
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="19dp"
@@ -196,12 +207,13 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintHorizontal_bias="0.744"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.029"
         app:srcCompat="@drawable/ic_visibility_white_24dp" />
 
+    <!-- Chicken wing food icon image -->
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="19dp"
@@ -218,6 +230,7 @@
         app:layout_constraintVertical_bias="0.029"
         app:srcCompat="@drawable/food" />
 
+    <!-- Save game button -->
     <Button
         android:id="@+id/saveGame"
         android:layout_width="119dp"
@@ -227,12 +240,32 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/btn_gradient_style"
+        android:onClick="save"
         android:text="Save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.971"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.645" />
+        app:layout_constraintVertical_bias="0.671" />
+
+    <!-- 20 second Countdown timer -->
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text=""
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084" />
 
 </android.support.constraint.ConstraintLayout>

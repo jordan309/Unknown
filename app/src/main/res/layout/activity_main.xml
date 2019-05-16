@@ -3,10 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/mainbackground"
     android:layout_height="match_parent"
+    android:background="@drawable/mainbackground"
     tools:context=".MainActivity">
 
+    <!-- First button choice -->
     <Button
         android:id="@+id/answer1"
         android:layout_width="119dp"
@@ -25,6 +26,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.986" />
 
+    <!-- Second button choice -->
     <Button
         android:id="@+id/answer2"
         android:layout_width="119dp"
@@ -42,6 +44,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.986" />
 
+    <!-- Load game button -->
     <Button
         android:id="@+id/load"
         android:layout_width="119dp"
@@ -61,6 +64,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.83" />
 
+    <!-- Third button choice -->
     <Button
         android:id="@+id/answer3"
         android:layout_width="119dp"
@@ -79,6 +83,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.986" />
 
+    <!-- Hunger percentage textview -->
     <TextView
         android:id="@+id/fscore"
         android:layout_width="101dp"
@@ -97,6 +102,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.031" />
 
+    <!-- Water percentage textview -->
     <TextView
         android:id="@+id/wscore"
         android:layout_width="104dp"
@@ -115,6 +121,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.031" />
 
+    <!-- Sanity percentage textview -->
     <TextView
         android:id="@+id/sscore"
         android:layout_width="101dp"
@@ -133,6 +140,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.031" />
 
+    <!-- Storyline textview -->
     <TextView
         android:id="@+id/question"
         android:layout_width="350dp"
@@ -151,7 +159,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.555" />
 
-
+    <!-- Result of choice selected textview -->
     <TextView
         android:id="@+id/dresults"
         android:layout_width="350dp"
@@ -170,7 +178,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.168" />
 
-
+    <!-- Water icon image -->
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="19dp"
@@ -179,15 +187,16 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:contentDescription="TODO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.356"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.03"
-        app:srcCompat="@drawable/ic_water_white_24dp"
-        android:contentDescription="TODO" />
+        app:srcCompat="@drawable/ic_water_white_24dp" />
 
+    <!-- Eye icon sanity image -->
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="19dp"
@@ -204,6 +213,7 @@
         app:layout_constraintVertical_bias="0.03"
         app:srcCompat="@drawable/ic_visibility_white_24dp" />
 
+    <!-- Chicken wing food icon image -->
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="19dp"
@@ -220,6 +230,7 @@
         app:layout_constraintVertical_bias="0.03"
         app:srcCompat="@drawable/food" />
 
+    <!-- Save game button -->
     <Button
         android:id="@+id/saveGame"
         android:layout_width="119dp"
@@ -228,9 +239,9 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Save"
-        android:onClick="save"
         android:background="@drawable/btn_gradient_style"
+        android:onClick="save"
+        android:text="Save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.971"
@@ -238,6 +249,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.83" />
 
+    <!-- 20 second Countdown timer -->
     <TextView
         android:id="@+id/text_view_countdown"
         android:layout_width="wrap_content"
