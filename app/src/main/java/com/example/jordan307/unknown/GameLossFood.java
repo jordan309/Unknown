@@ -42,4 +42,9 @@ public class GameLossFood extends AppCompatActivity {
     }
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> e0b2940b3468eee7397f1e7dce6bfe8dd2b458fa
 }

@@ -44,8 +44,13 @@ public class MainActivity extends AppCompatActivity {
 
     //Function that sets the initial player resource values based on the character they chose in the character select screen
     private void initialScores() {
+<<<<<<< HEAD
         switch (Name) {
             case "evelyn": {
+=======
+        switch (Name){
+            case "evelyn":{
+>>>>>>> e0b2940b3468eee7397f1e7dce6bfe8dd2b458fa
                 foodValue = 150;
                 sanityValue = 80;
                 foodScore.setText("Food " + foodValue + "%");
@@ -54,7 +59,11 @@ public class MainActivity extends AppCompatActivity {
                 break;
             }
 
+<<<<<<< HEAD
             case "trevor": {
+=======
+            case "trevor":{
+>>>>>>> e0b2940b3468eee7397f1e7dce6bfe8dd2b458fa
                 waterValue = 150;
                 foodValue = 80;
                 foodScore.setText("Food " + foodValue + "%");
@@ -63,7 +72,11 @@ public class MainActivity extends AppCompatActivity {
                 break;
             }
 
+<<<<<<< HEAD
             case "amy": {
+=======
+            case "amy":{
+>>>>>>> e0b2940b3468eee7397f1e7dce6bfe8dd2b458fa
                 sanityValue = 150;
                 waterValue = 80;
                 foodScore.setText("Food " + foodValue + "%");
@@ -72,7 +85,11 @@ public class MainActivity extends AppCompatActivity {
                 break;
             }
 
+<<<<<<< HEAD
             case "connor": {
+=======
+            case "connor":{
+>>>>>>> e0b2940b3468eee7397f1e7dce6bfe8dd2b458fa
                 foodValue = 110;
                 waterValue = 110;
                 sanityValue = 110;
@@ -265,7 +282,10 @@ public class MainActivity extends AppCompatActivity {
                 countDownTimer.cancel();
                 dResults.setText(mA1RDialog);
                 answerMaint();
+<<<<<<< HEAD
 
+=======
+>>>>>>> e0b2940b3468eee7397f1e7dce6bfe8dd2b458fa
             }
         });
 
