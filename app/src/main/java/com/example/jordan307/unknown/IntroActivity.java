@@ -66,7 +66,7 @@ public class IntroActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 // Open main activity
-                Intent mainActivity = new Intent(getApplicationContext(), MainActivity.class);
+                Intent mainActivity = new Intent(getApplicationContext(), CharacterSelect.class);
                 startActivity(mainActivity);
 
             }

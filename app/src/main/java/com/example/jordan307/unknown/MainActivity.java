@@ -41,9 +41,46 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void initialScores() {
-        foodScore.setText("Food " + foodValue + "%");
-        waterScore.setText("Water " + waterValue + "%");
-        sanityScore.setText("Sanity " + sanityValue + "%");
+        switch (Name){
+            case "evelyn":{
+                foodValue = 150;
+                sanityValue = 80;
+                foodScore.setText("Food " + foodValue + "%");
+                waterScore.setText("Water " + waterValue + "%");
+                sanityScore.setText("Sanity " + sanityValue + "%");
+                break;
+            }
+
+            case "trevor":{
+                waterValue = 150;
+                foodValue = 80;
+                foodScore.setText("Food " + foodValue + "%");
+                waterScore.setText("Water " + waterValue + "%");
+                sanityScore.setText("Sanity " + sanityValue + "%");
+                break;
+            }
+
+            case "amy":{
+                sanityValue = 150;
+                waterValue = 80;
+                foodScore.setText("Food " + foodValue + "%");
+                waterScore.setText("Water " + waterValue + "%");
+                sanityScore.setText("Sanity " + sanityValue + "%");
+                break;
+            }
+
+            case "connor":{
+                foodValue = 110;
+                waterValue = 110;
+                sanityValue = 110;
+                foodScore.setText("Food " + foodValue + "%");
+                waterScore.setText("Water " + waterValue + "%");
+                sanityScore.setText("Sanity " + sanityValue + "%");
+                break;
+            }
+
+        }
+
     }
 
     public void save(View v) {
@@ -133,7 +170,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     //Character Variables
-    private int powerCounter = 1;
     private String Name = CharacterSelect.characterName;
 
     //Question number variable
