@@ -35,7 +35,6 @@
             android:enabled="true" />
 
         <activity android:name=".AboutActivity" />
-        <activity android:name=".SettingsActivity" />
         <activity android:name=".MenuActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".Splashscreen">
