@@ -407,4 +407,17 @@ Still working on features:
 - Added additional coding comments
 
 
+# Week 10
+## 17/05/19 - Thursday and Friday [Jordan]
+
+- Landscape mode for game over if 0 or negative percentage on hunger, water and sanity percentages. 
+- Landscape mode for Victory
+- Removed settings activity 
+- Indentations and comments for java and xml
+- Countdown bug fixed
+- Crash bug fixed
+- -20 on all percentages if timer hits 0 seconds and user has not chosen a choice 
+- Reset timer if choice is made before timer ends or if it hits 0 
+
+
 
