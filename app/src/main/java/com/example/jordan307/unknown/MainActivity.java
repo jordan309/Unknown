@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    //Function that sets the initial player resource values based on the character they chose in the character select screen
     private void initialScores() {
         switch (Name){
             case "evelyn":{
@@ -140,21 +141,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    //Defining the buttons
+    //Defining in game buttons for functions to make use of
     Button answer1, answer2, answer3;
 
+    //Defining text views for functions to make use of
     TextView foodScore, waterScore, sanityScore, question, dResults;
-
+    //Number of questions that have been completed so far which is used as a reference for the main game array
     private Questions mQuestions = new Questions();
+    private int mQuestionNumber = 0;
 
-
-    //Player resource variables
+    //Sets base player resource values before character class modifications
     private int foodValue = 100;
     private int waterValue = 100;
     private int sanityValue = 100;
 
 
-    //Question Variables
+    //Question and core gameplay variables taken from the main gameplay array.
     private String mA1AnswerEffectValues;
     private String mA2AnswerEffectValues;
     private String mA3AnswerEffectValues;
@@ -169,11 +171,8 @@ public class MainActivity extends AppCompatActivity {
     private String mA3RDialog;
 
 
-    //Character Variables
+    //Character variable taken from character select activity
     private String Name = CharacterSelect.characterName;
-
-    //Question number variable
-    private int mQuestionNumber = 0;
 
 
     @Override
@@ -209,9 +208,11 @@ public class MainActivity extends AppCompatActivity {
         initialScores();
 
 
+        //When the first answer button is selected the following code will run
         answer1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //A switch that will check which resource is being altered based on the players answer and determine if it is to be subtracted or added to
                 switch (mA1Type) {
                     case "Hunger":
                         if (mA1AnswerEffectOperator == "Pos") {
@@ -237,19 +238,15 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 dResults.setText(mA1RDialog);
-                updateScores();
-                updateQuestion();
-                winCheck();
-                FoodLoseCheck();
-                SanityLoseCheck();
-                WaterLoseCheck();
+                answerMaint();
             }
         });
 
-
+        //When the second answer button is selected the following code will run
         answer2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //A switch that will check which resource is being altered based on the players answer and determine if it is to be subtracted or added to
                 switch (mA2Type) {
                     case "Hunger":
                         if (mA2AnswerEffectOperator == "Pos") {
@@ -275,20 +272,17 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 dResults.setText(mA2RDialog);
-                updateScores();
-                updateQuestion();
-                winCheck();
-                FoodLoseCheck();
-                SanityLoseCheck();
-                WaterLoseCheck();
+                answerMaint();
 
             }
 
         });
 
+        //When the third answer button is selected the following code will run
         answer3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //A switch that will check which resource is being altered based on the players answer and determine if it is to be subtracted or added to
                 switch (mA3Type) {
                     case "Hunger":
                         if (mA3AnswerEffectOperator == "Pos") {
@@ -314,12 +308,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 dResults.setText(mA3RDialog);
-                updateScores();
-                updateQuestion();
-                winCheck();
-                FoodLoseCheck();
-                SanityLoseCheck();
-                WaterLoseCheck();
+                answerMaint();
 
             }
         });
@@ -327,12 +316,24 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //A function that is used to run other functions and save duplicating code every time each of these tasks must be run
+    private void answerMaint() {
+        updateScores();
+        updateQuestion();
+        winCheck();
+        FoodLoseCheck();
+        SanityLoseCheck();
+        WaterLoseCheck();
+    }
+
+    //Updates the game scores based on current values stored within each of the score variables
     private void updateScores() {
         foodScore.setText("Food " + foodValue + "%");
         waterScore.setText("Water " + waterValue + "%");
         sanityScore.setText("Sanity " + sanityValue + "%");
     }
 
+    //Checks if the player has beaten the game by completing the final question
     private void winCheck() {
         if (mQuestionNumber >= 51) {
             Intent intent = new Intent(getApplicationContext(), GameWin.class);
@@ -340,6 +341,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //Checks the players food score to see if it is less than or equal to 0 resulting in a game loss.
     private void FoodLoseCheck() {
         if (foodValue <= 0) {
             Intent intent = new Intent(getApplicationContext(), GameLossFood.class);
@@ -347,6 +349,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //Checks the players sanity score to see if it is less than or equal to 0 resulting in a game loss.
     private void SanityLoseCheck() {
         if (sanityValue <= 0) {
             Intent intent = new Intent(getApplicationContext(), GameLossSanity.class);
@@ -354,12 +357,16 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //Checks the players water score to see if it is less than or equal to 0 resulting in a game loss.
     private void WaterLoseCheck() {
         if (waterValue <= 0) {
             Intent intent = new Intent(getApplicationContext(), GameLossWater.class);
             startActivity(intent);
         }
     }
+
+    /*Updates the games data variables from the data stored in the main game array. Each time this function is run it will fetch new data from the
+    array based on the games current question number*/
 
     private void updateQuestion() {
         if (mQuestionNumber < 51) {
