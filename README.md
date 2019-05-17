@@ -20,6 +20,7 @@ The end of civilisation is near, spirits roam the earth now. In 2050, an experim
 - Array of 50 storyline parts with choice results 
 - 3 choice buttons based on storyline 
 - 20 second countdown timer 
+- -20 on all percentage values if timer hits 0
 - Character selection option
 - Each character has their own ability that can increase the survival chance
 - Music playing in background
