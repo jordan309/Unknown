@@ -21,4 +21,5 @@ The end of civilisation is near, spirits roam the earth now. In 2050, an experim
 - Countdown timer to increase intensity of the gameplay, this pressures players to read the story quicker and make a decision 
 - Character selection option
 - Each character has their own ability that can increase the survival chance
+- Save / load game
 
