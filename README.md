@@ -16,8 +16,9 @@ The end of civilisation is near, spirits roam the earth now. In 2050, an experim
 
 
 # Features: 
-- 100% percentage level on three values: Hunger, water and sanity 
+- 100% percentage level on three values: hunger, water and sanity 
 - 3 choice buttons based on storyline 
 - Countdown timer to increase intensity of the gameplay, this pressures players to read the story quicker and make a decision 
-- Character ability: 
-- Character 
+- Character selection option
+- Each character has their own ability that can increase the survival chance
+
