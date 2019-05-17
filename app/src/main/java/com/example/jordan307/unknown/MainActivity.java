@@ -86,6 +86,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /* We had some issues / bugs trying to save and load the game. We decided it would be best
+       to leave out this feature as it would make the challenge of winning easier. Whereas, having no
+       save option would increase the difficulty of the game and make it addictive to play.
+
     //Saving strings to internal storage on device
     public void save(View v) {
         String food = foodScore.getText().toString();
@@ -164,6 +168,8 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
+    */
 
 
     //Defining in game buttons for functions to make use of
