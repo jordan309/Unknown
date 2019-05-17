@@ -31,11 +31,15 @@ public class MusicService extends Service implements MediaPlayer.OnErrorListener
     public void onCreate() {
         super.onCreate();
 
-        mPlayer = MediaPlayer.create(this, R.raw.background_music); //replace with your song name!
+        //Assigns the media player a music file from the raw directory
+        mPlayer = MediaPlayer.create(this, R.raw.background_music);
         mPlayer.setOnErrorListener(this);
 
+        //If statement that checks if the music player is active before proceeding
         if (mPlayer != null) {
+            //Set whether the music should loop or not true or false
             mPlayer.setLooping(true);
+            //Music Player Volume control variables
             mPlayer.setVolume(50, 50);
         }
 
@@ -59,7 +63,7 @@ public class MusicService extends Service implements MediaPlayer.OnErrorListener
         return START_NOT_STICKY;
     }
 
-    // Pause Music Function
+    // Pause Music Function if it is currently active. Also saves current music position to unpause from
     public void pauseMusic() {
         if (mPlayer != null) {
             if (mPlayer.isPlaying()) {
@@ -69,7 +73,7 @@ public class MusicService extends Service implements MediaPlayer.OnErrorListener
         }
     }
 
-    // Resume Music Function
+    // Resume Music Function from saved position
     public void resumeMusic() {
         if (mPlayer != null) {
             if (!mPlayer.isPlaying()) {
@@ -79,7 +83,7 @@ public class MusicService extends Service implements MediaPlayer.OnErrorListener
         }
     }
 
-    //Start Music Function
+    //Start Music Function using many variables used at the start of the document
     public void startMusic() {
         mPlayer = MediaPlayer.create(this, R.raw.background_music);
         mPlayer.setOnErrorListener(this);

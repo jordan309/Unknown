@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
     //Function that sets the initial player resource values based on the character they chose in the character select screen
     private void initialScores() {
         switch (Name) {
+            //Contains variations on starting resources variables based on evelyns story
             case "evelyn": {
                 foodValue = 150;
                 sanityValue = 80;
@@ -54,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             }
 
+            //Contains variations on starting resources variables based on trevors story
             case "trevor": {
                 waterValue = 150;
                 foodValue = 80;
@@ -63,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             }
 
+            //Contains variations on starting resources variables based on amys story
             case "amy": {
                 sanityValue = 150;
                 waterValue = 80;
@@ -71,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 sanityScore.setText("Sanity " + sanityValue + "%");
                 break;
             }
-
+            //Contains variations on starting resources variables based on connors story
             case "connor": {
                 foodValue = 110;
                 waterValue = 110;

@@ -60,7 +60,7 @@ public class MenuActivity extends AppCompatActivity {
         });
         mHomestop.startWatch();
 
-        // Navigated the user to the character select screen and also pauses the menu background music to allow for new more appropriate music to be initiated.
+        // Navigated the user to the character select screen when the user clicks on the play button
         final Button buttonplay = (Button) findViewById(R.id.PlayButton);
         buttonplay.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,9 +69,6 @@ public class MenuActivity extends AppCompatActivity {
                 buttonplay.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        if (mServ != null) {
-                            mServ.stopMusic();
-                        }
                         Intent intent = new Intent(getApplicationContext(), CharacterSelect.class);
                         startActivity(intent);
                     }
@@ -79,7 +76,7 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
-        //Navigates the user to the about page
+        //Navigates the user to the about page when the user clicks on the about button
         final Button buttonabout = (Button) findViewById(R.id.AboutButton);
         buttonabout.setOnClickListener(new View.OnClickListener() {
             @Override

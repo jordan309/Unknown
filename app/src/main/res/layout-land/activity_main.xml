@@ -45,24 +45,6 @@
         app:layout_constraintVertical_bias="0.986" />
 
     <!-- Load game button -->
-    <Button
-        android:id="@+id/load"
-        android:layout_width="119dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/btn_gradient_style"
-        android:gravity="center"
-        android:onClick="load"
-        android:text="Load"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.028"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.671" />
 
     <!-- Third button choice -->
     <Button
@@ -151,7 +133,7 @@
         android:layout_marginBottom="8dp"
         android:text="TextView"
         android:textColor="@color/intro_title_colour"
-        android:textSize="14sp"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
@@ -231,23 +213,6 @@
         app:srcCompat="@drawable/food" />
 
     <!-- Save game button -->
-    <Button
-        android:id="@+id/saveGame"
-        android:layout_width="119dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/btn_gradient_style"
-        android:onClick="save"
-        android:text="Save"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.971"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.671" />
 
     <!-- 20 second Countdown timer -->
     <TextView
